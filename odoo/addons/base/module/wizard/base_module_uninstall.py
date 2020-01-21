@@ -37,12 +37,10 @@ class BaseModuleUninstall(models.TransientModel):
         for wizard in self:
             if wizard.module_id:
                 module_names = set(wizard._get_modules().mapped('name'))
-
-                def lost(model):
-                    xids = ir_models_xids.get(model.id, ())
-                    return xids and all(xid.split('.')[0] in module_names for xid in xids)
-
                 # find the models that have all their XIDs in the given modules
+                def lost(model):
+                    return all(xid.split('.')[0] in module_names
+                               for xid in ir_models_xids.get(model.id, ()))
                 self.model_ids = ir_models.filtered(lost).sorted('name')
 
     @api.onchange('module_id')

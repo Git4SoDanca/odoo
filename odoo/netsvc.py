@@ -28,7 +28,7 @@ def log(logger, level, prefix, msg, depth=None):
 path_prefix = os.path.realpath(os.path.dirname(os.path.dirname(__file__)))
 
 class PostgreSQLHandler(logging.Handler):
-    """ PostgreSQL Logging Handler will store logs in the database, by default
+    """ PostgreSQL Loggin Handler will store logs in the database, by default
     the current database, can be set using --log-db=DBNAME
     """
     def emit(self, record):
@@ -38,8 +38,7 @@ class PostgreSQLHandler(logging.Handler):
         if not dbname:
             return
         with tools.ignore(Exception), tools.mute_logger('odoo.sql_db'), sql_db.db_connect(dbname, allow_uri=True).cursor() as cr:
-            # preclude risks of deadlocks
-            cr.execute("SET LOCAL statement_timeout = 1000")
+            cr.autocommit(True)
             msg = tools.ustr(record.msg)
             if record.args:
                 msg = msg % record.args
@@ -120,7 +119,7 @@ def init_logger():
             if dirname and not os.path.isdir(dirname):
                 os.makedirs(dirname)
             if tools.config['logrotate'] is not False:
-                if tools.config['workers'] and tools.config['workers'] > 1:
+                if tools.config['workers'] > 1:
                     # TODO: fallback to regular file logging in master for safe(r) defaults?
                     #
                     # Doing so here would be a good idea but also might break

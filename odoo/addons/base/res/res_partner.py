@@ -7,6 +7,8 @@ import hashlib
 import pytz
 import threading
 
+from email.utils import formataddr
+
 import requests
 from lxml import etree
 from werkzeug import urls
@@ -216,8 +218,7 @@ class Partner(models.Model):
     # technical field used for managing commercial fields
     commercial_partner_id = fields.Many2one('res.partner', compute='_compute_commercial_partner',
                                              string='Commercial Entity', store=True, index=True)
-    commercial_partner_country_id = fields.Many2one('res.country', related='commercial_partner_id.country_id', store=True,
-        string="Commercial Entity's Country")
+    commercial_partner_country_id = fields.Many2one('res.country', related='commercial_partner_id.country_id', store=True)
     commercial_company_name = fields.Char('Company Name Entity', compute='_compute_commercial_company_name',
                                           store=True)
     company_name = fields.Char('Company Name')
@@ -371,7 +372,7 @@ class Partner(models.Model):
     @api.depends('name', 'email')
     def _compute_email_formatted(self):
         for partner in self:
-            partner.email_formatted = tools.formataddr((partner.name or u"False", partner.email or u"False"))
+            partner.email_formatted = formataddr((partner.name or u"False", partner.email or u"False"))
 
     @api.depends('is_company')
     def _compute_company_type(self):
@@ -428,7 +429,7 @@ class Partner(models.Model):
         as if they were related fields """
         commercial_partner = self.commercial_partner_id
         if commercial_partner != self:
-            sync_vals = commercial_partner.with_prefetch()._update_fields_values(self._commercial_fields())
+            sync_vals = commercial_partner._update_fields_values(self._commercial_fields())
             self.write(sync_vals)
 
     @api.multi
@@ -447,7 +448,7 @@ class Partner(models.Model):
         """ Sync commercial fields and address fields from company and to children after create/update,
         just as if those were all modeled as fields.related to the parent """
         # 1. From UPSTREAM: sync from parent
-        if values.get('parent_id') or values.get('type') == 'contact':
+        if values.get('parent_id') or values.get('type', 'contact'):
             # 1a. Commercial fields: sync if parent changed
             if values.get('parent_id'):
                 self._commercial_sync_from_company()
@@ -651,7 +652,6 @@ class Partner(models.Model):
             where_query = self._where_calc(args)
             self._apply_ir_rules(where_query, 'read')
             from_clause, where_clause, where_clause_params = where_query.get_sql()
-            from_str = from_clause if from_clause else 'res_partner'
             where_str = where_clause and (" WHERE %s AND " % where_clause) or ' WHERE '
 
             # search on the name of the contacts and of its company
@@ -663,8 +663,8 @@ class Partner(models.Model):
 
             unaccent = get_unaccent_wrapper(self.env.cr)
 
-            query = """SELECT res_partner.id
-                         FROM {from_str}
+            query = """SELECT id
+                         FROM res_partner
                       {where} ({email} {operator} {percent}
                            OR {display_name} {operator} {percent}
                            OR {reference} {operator} {percent}
@@ -672,14 +672,13 @@ class Partner(models.Model):
                            -- don't panic, trust postgres bitmap
                      ORDER BY {display_name} {operator} {percent} desc,
                               {display_name}
-                    """.format(from_str=from_str,
-                               where=where_str,
+                    """.format(where=where_str,
                                operator=operator,
-                               email=unaccent('res_partner.email'),
-                               display_name=unaccent('res_partner.display_name'),
-                               reference=unaccent('res_partner.ref'),
+                               email=unaccent('email'),
+                               display_name=unaccent('display_name'),
+                               reference=unaccent('ref'),
                                percent=unaccent('%s'),
-                               vat=unaccent('res_partner.vat'),)
+                               vat=unaccent('vat'),)
 
             where_clause_params += [search_name]*5
             if limit:

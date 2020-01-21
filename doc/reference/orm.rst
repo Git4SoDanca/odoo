@@ -499,8 +499,8 @@ necessary to clear caches when using ``CREATE``, ``UPDATE`` or ``DELETE`` in
 SQL, but not ``SELECT`` (which simply reads the database).
 
 Clearing caches can be performed using the
-:meth:`~odoo.models.BaseModel.invalidate_cache` method of the
-:class:`~odoo.models.BaseModel` object.
+:meth:`~odoo.api.Environment.invalidate_all` method of the
+:class:`~odoo.api.Environment` object.
 
 
 .. _reference/orm/oldapi:
@@ -947,17 +947,17 @@ them (e.g. to change their default sort order):
 
 .. literalinclude:: ../../odoo/addons/test_documentation_examples/extension.py
     :language: python
-    :lines: 7-
+    :lines: 5-
 
 .. literalinclude:: ../../odoo/addons/test_documentation_examples/tests/test_extension.py
     :language: python
-    :lines: 10,15
+    :lines: 8,13
 
 will yield:
 
 .. literalinclude:: ../../odoo/addons/test_documentation_examples/tests/test_extension.py
     :language: text
-    :lines: 13
+    :lines: 11
 
 .. note:: it will also yield the various :ref:`automatic fields
           <reference/orm/model/automatic>` unless they've been disabled

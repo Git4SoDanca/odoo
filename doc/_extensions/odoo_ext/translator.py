@@ -208,7 +208,7 @@ class BootstrapTranslator(nodes.NodeVisitor, object):
         else:
             opts = {}
 
-        def warner(msg, **kw):
+        def warner(msg):
             self.builder.warn(msg, (self.builder.current_docname, node.line))
         highlighted = self.builder.highlighter.highlight_block(
             node.rawsource, lang, opts=opts, warn=warner, linenos=linenos,

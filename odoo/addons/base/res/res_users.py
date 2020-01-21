@@ -423,19 +423,20 @@ class Users(models.Model):
     @tools.ormcache('self._uid')
     def context_get(self):
         user = self.env.user
-        # determine field names to read
-        name_to_key = {
-            name: name[8:] if name.startswith('context_') else name
-            for name in self._fields
-            if name.startswith('context_') or name in ('lang', 'tz')
-        }
-        # use read() to not read other fields: this must work while modifying
-        # the schema of models res.users or res.partner
-        values = user.read(list(name_to_key), load=False)[0]
-        return {
-            key: values[name]
-            for name, key in name_to_key.items()
-        }
+        result = {}
+        for k in self._fields:
+            if k.startswith('context_'):
+                context_key = k[8:]
+            elif k in ['lang', 'tz']:
+                context_key = k
+            else:
+                context_key = False
+            if context_key:
+                res = getattr(user, k) or False
+                if isinstance(res, models.BaseModel):
+                    res = res.id
+                result[context_key] = res or False
+        return result
 
     @api.model
     @api.returns('ir.actions.act_window', lambda record: record.id)
@@ -448,8 +449,6 @@ class Users(models.Model):
     @api.model
     def check_credentials(self, password):
         """ Override this method to plug additional authentication methods"""
-        if not password:
-            raise AccessDenied()
         user = self.sudo().search([('id', '=', self._uid), ('password', '=', password)])
         if not user:
             raise AccessDenied()
@@ -675,26 +674,8 @@ class GroupsImplied(models.Model):
         if values.get('users') or values.get('implied_ids'):
             # add all implied groups (to all users of each group)
             for group in self:
-                self._cr.execute("""
-                    WITH RECURSIVE group_imply(gid, hid) AS (
-                        SELECT gid, hid
-                          FROM res_groups_implied_rel
-                         UNION
-                        SELECT i.gid, r.hid
-                          FROM res_groups_implied_rel r
-                          JOIN group_imply i ON (i.hid = r.gid)
-                    )
-                    INSERT INTO res_groups_users_rel (gid, uid)
-                         SELECT i.hid, r.uid
-                           FROM group_imply i, res_groups_users_rel r
-                          WHERE r.gid = i.gid
-                            AND i.gid = %(gid)s
-                         EXCEPT
-                         SELECT r.gid, r.uid
-                           FROM res_groups_users_rel r
-                           JOIN group_imply i ON (r.gid = i.hid)
-                          WHERE i.gid = %(gid)s
-                """, dict(gid=group.id))
+                vals = {'users': list(pycompat.izip(repeat(4), group.with_context(active_test=False).users.ids))}
+                super(GroupsImplied, group.trans_implied_ids).write(vals)
         return res
 
 
@@ -875,9 +856,9 @@ class UsersView(models.Model):
         group_multi_company = self.env.ref('base.group_multi_company', False)
         if group_multi_company and 'company_ids' in values:
             if len(user.company_ids) <= 1 and user.id in group_multi_company.users.ids:
-                user.write({'groups_id': [(3, group_multi_company.id)]})
+                group_multi_company.write({'users': [(3, user.id)]})
             elif len(user.company_ids) > 1 and user.id not in group_multi_company.users.ids:
-                user.write({'groups_id': [(4, group_multi_company.id)]})
+                group_multi_company.write({'users': [(4, user.id)]})
         return user
 
     @api.multi
@@ -888,9 +869,9 @@ class UsersView(models.Model):
         if group_multi_company and 'company_ids' in values:
             for user in self:
                 if len(user.company_ids) <= 1 and user.id in group_multi_company.users.ids:
-                    user.write({'groups_id': [(3, group_multi_company.id)]})
+                    group_multi_company.write({'users': [(3, user.id)]})
                 elif len(user.company_ids) > 1 and user.id not in group_multi_company.users.ids:
-                    user.write({'groups_id': [(4, group_multi_company.id)]})
+                    group_multi_company.write({'users': [(4, user.id)]})
         return res
 
     def _remove_reified_groups(self, values):
@@ -966,12 +947,9 @@ class UsersView(models.Model):
         # add reified groups fields
         for app, kind, gs in self.env['res.groups'].sudo().get_groups_by_application():
             if kind == 'selection':
-                field_name = name_selection_groups(gs.ids)
-                if allfields and field_name not in allfields:
-                    continue
                 # selection group field
                 tips = ['%s: %s' % (g.name, g.comment) for g in gs if g.comment]
-                res[field_name] = {
+                res[name_selection_groups(gs.ids)] = {
                     'type': 'selection',
                     'string': app.name or _('Other'),
                     'selection': [(False, '')] + [(g.id, g.name) for g in gs],
@@ -982,10 +960,7 @@ class UsersView(models.Model):
             else:
                 # boolean group fields
                 for g in gs:
-                    field_name = name_boolean_group(g.id)
-                    if allfields and field_name not in allfields:
-                        continue
-                    res[field_name] = {
+                    res[name_boolean_group(g.id)] = {
                         'type': 'boolean',
                         'string': g.name,
                         'help': g.comment,

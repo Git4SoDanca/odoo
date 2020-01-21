@@ -3,25 +3,19 @@
 # * base
 # 
 # Translators:
-# Zoltán Csapó <csapoz@gmail.com>, 2017
+# krnkris, 2017
+# Martin Trigaux, 2017
+# gezza <geza.nagy@oregional.hu>, 2017
 # Kovács Tibor <kovika@gmail.com>, 2017
-# Tamás Dombos, 2018
-# krnkris, 2018
-# Gergő Kertész <gergo.kertesz@maxflow.hu>, 2019
-# Ákos Nagy <akos.nagy@oregional.hu>, 2019
-# Daniel Gerstenbrand <daniel.gerstenbrand@gmail.com>, 2019
-# gezza <geza.nagy@oregional.hu>, 2019
-# Istvan <leki69@gmail.com>, 2019
-# Martin Trigaux, 2019
-# Tamás Németh <ntomasz81@gmail.com>, 2019
-# 
+# Zoltán Csapó <csapoz@gmail.com>, 2017
+# tdombos <tdombos@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-03 15:05+0000\n"
-"PO-Revision-Date: 2017-09-20 10:13+0000\n"
-"Last-Translator: Tamás Németh <ntomasz81@gmail.com>, 2019\n"
+"POT-Creation-Date: 2018-08-02 09:47+0000\n"
+"PO-Revision-Date: 2018-08-02 09:47+0000\n"
+"Last-Translator: tdombos <tdombos@gmail.com>, 2017\n"
 "Language-Team: Hungarian (https://www.transifex.com/odoo/teams/41243/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -52,10 +46,6 @@ msgid ""
 "Allow cashier to reprint receipts\n"
 "\n"
 msgstr ""
-"\n"
-"\n"
-"Engedélyezze a pénztárosnak a nyugta újranyomtatását\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_hu
@@ -487,14 +477,6 @@ msgstr ""
 "\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_uk_reports_hmrc
-msgid ""
-"\n"
-"        Accounting reports send to HMRC\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_account_extension
 msgid ""
 "\n"
@@ -507,16 +489,6 @@ msgstr ""
 "        Hozzáilleszti  az alap könyvelési számlatükör modult a Nagyvállalati kiadáshoz.\n"
 "\n"
 "        Ez a modul automatikusan telepítésre kerül ha a könyvelési modul és a nagyvállalati kiadás is elérhető"
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_mx_reports_closing
-msgid ""
-"\n"
-"        Allow to generate the trial balance for the closing entry.\n"
-"\n"
-"        Colloquially known as \"Month 13\"\n"
-"    "
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_voip
@@ -542,9 +514,6 @@ msgid ""
 "        Bill timesheets logged on helpdesk tickets.\n"
 "    "
 msgstr ""
-"\n"
-"        Helpdesk kérésekre rögzített időkimutatások számlázása.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_maintenance
@@ -884,15 +853,6 @@ msgstr ""
 "    PayuMoney Fizetél lebonyolító Indiának.\n"
 "\n"
 "    PayUmoney fizetési átjáró csak az INR pénznemet támogatja."
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_mx_tax_cash_basis
-msgid ""
-"\n"
-"    Properly create the Journal Entries on Tax Cash basis when using foreign\n"
-"    currencies the Tax must be set at date of payment\n"
-"    "
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_project_forecast
@@ -1298,14 +1258,6 @@ msgstr ""
 "A vállalkozás személyre szabhatja melyik Pad szerkesztő lesz használva az új szerkesztői linkhez\n"
 "(alap esetben, http://etherpad.com/).\n"
 "    "
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_be_intrastat_2019
-msgid ""
-"\n"
-"Adds the possibility to specify the origin country of goods and the partner VAT in the Intrastat XML report.\n"
-"    "
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_calendar
@@ -1772,8 +1724,7 @@ msgid ""
 "Legal\n"
 "-----\n"
 "**The use of pos_blackbox_be sources is only certified on odoo.com SaaS platform\n"
-"for version 11.0.** Contact Odoo SA before installing pos_blackbox_be module.\n"
-"\n"
+"for version 9.0.**\n"
 "An obfuscated and certified version of the pos_blackbox_be may be provided on\n"
 "requests for on-premise installations.\n"
 "No modified version is certified and supported by Odoo SA.\n"
@@ -2237,16 +2188,6 @@ msgid ""
 "Allow the user to generate the EDI document for Mexican invoicing.\n"
 "\n"
 "This module allows the creation of the EDI documents and the communication with the Mexican certification providers (PACs) to sign/cancel them.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_edi_payment_bank
-msgid ""
-"\n"
-"EDI Mexican Localization\n"
-"========================\n"
-"Allow the user to select the bank account that was used the customer to paid the invoices.\n"
 "    "
 msgstr ""
 
@@ -6083,14 +6024,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/model.py:148
-#, python-format
-msgid ""
-" another model requires the record being deleted. If possible, archive it "
-"instead."
-msgstr ""
-
-#. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%A - Full weekday name."
 msgstr "%A - A hét napjának teljes neve"
@@ -6229,14 +6162,6 @@ msgstr ", csak olvasható"
 #: model:ir.ui.view,arch_db:base.report_irmodulereference
 msgid ", required"
 msgstr ", kötelező"
-
-#. module: base
-#: code:addons/model.py:136
-#, python-format
-msgid ""
-"- Create/update: a mandatory field is not set.\n"
-"- Delete: another model requires the record being deleted. If possible, archive it instead."
-msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -6910,19 +6835,9 @@ msgid "A module to test the API."
 msgstr "Modul a környezeti API teszteléséhez."
 
 #. module: base
-#: model:ir.module.module,description:base.module_test_rpc
-msgid "A module to test the RPC requests."
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_test_uninstall
 msgid "A module to test the uninstall feature."
 msgstr "Modul az eltávolító teszteléséhez."
-
-#. module: base
-#: model:ir.module.module,description:base.module_test_translation_import
-msgid "A module to test translation import."
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_assetsbundle
@@ -7315,11 +7230,6 @@ msgid "Add Delivery Costs to Online Sales"
 msgstr "Szállítási költséget ad az online értékesítésekhez"
 
 #. module: base
-#: selection:ir.actions.server,state:0
-msgid "Add Followers"
-msgstr "Követők hozzáadása"
-
-#. module: base
 #: model:ir.module.module,summary:base.module_account_cash_basis_base_account
 msgid "Add a custom account to handle base amount lines"
 msgstr ""
@@ -7576,7 +7486,7 @@ msgstr "Összeg után"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_A
 msgid "Agriculture"
-msgstr "Mezőgazdaság"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.al
@@ -8026,11 +7936,6 @@ msgid "Automate Marketing Campaigns"
 msgstr ""
 
 #. module: base
-#: selection:ir.actions.server,usage:0
-msgid "Automated Action"
-msgstr "Automatizált művelet"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_base_automation
 msgid "Automated Action Rules"
 msgstr "Automata végrehalytási szabályok"
@@ -8195,16 +8100,6 @@ msgid "Bank account"
 msgstr "Bankszámla"
 
 #. module: base
-#: model:ir.module.module,summary:base.module_l10n_mx_edi_payment_bank
-msgid "Bank account in the payments"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_payment_bank
-msgid "Bank account payment to Mexico"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,help:base.field_res_partner_bank_acc_type
 msgid "Bank account type, inferred from account number"
 msgstr "Bankszámla típus, számlaszámból következtetett"
@@ -8361,11 +8256,6 @@ msgstr "Fehéroroszország"
 #: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat
 msgid "Belgian Intrastat Declaration"
 msgstr "Belgia Intrastat nyilatkozat"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat_2019
-msgid "Belgian Intrastat Declaration - Complement for 2019"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_blackbox_be
@@ -8533,7 +8423,7 @@ msgstr "Bouvet-sziget"
 #. module: base
 #: selection:res.company,external_report_layout:0
 msgid "Boxed"
-msgstr "Boxed"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.br
@@ -8671,7 +8561,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.kh
 msgid "Cambodia"
-msgstr "Kambodzsa"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.cm
@@ -9026,7 +8916,7 @@ msgstr "Város"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_base_address_city
 msgid "City Addresses"
-msgstr "Cím"
+msgstr ""
 
 #. module: base
 #: selection:res.company,external_report_layout:0
@@ -9209,12 +9099,6 @@ msgstr "Megjegyzések"
 #: model:ir.model.fields,field_description:base.field_res_users_commercial_partner_id
 msgid "Commercial Entity"
 msgstr "Értékesítő személy"
-
-#. module: base
-#: model:ir.model.fields,field_description:base.field_res_partner_commercial_partner_country_id
-#: model:ir.model.fields,field_description:base.field_res_users_commercial_partner_country_id
-msgid "Commercial Entity's Country"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_data_drinks
@@ -9462,12 +9346,6 @@ msgid "Constraint Type"
 msgstr "Illesztő típus"
 
 #. module: base
-#: code:addons/model.py:153
-#, python-format
-msgid "Constraint:"
-msgstr ""
-
-#. module: base
 #: sql_constraint:ir.model.constraint:0
 msgid "Constraints with the same name are unique per module."
 msgstr ""
@@ -9476,7 +9354,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_F
 msgid "Construction"
-msgstr "Építés"
+msgstr ""
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_8
@@ -9508,7 +9386,7 @@ msgstr "Kapcsolati űrlap"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_crm_phone_validation
 msgid "Contact Form Number Validation"
-msgstr "Kapcsolati űrlap szám érvényesítés"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_partner_form
@@ -9607,7 +9485,7 @@ msgstr "Nem hozható létre Kontakt e-mail cím nélkül!"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_count
 msgid "Count (incl. archived)"
-msgstr "Mennyiség (az archiválttal együtt)"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_country
@@ -9620,7 +9498,9 @@ msgstr "Országok"
 #: model:ir.model.fields,field_description:base.field_res_bank_country
 #: model:ir.model.fields,field_description:base.field_res_company_country_id
 #: model:ir.model.fields,field_description:base.field_res_country_state_country_id
+#: model:ir.model.fields,field_description:base.field_res_partner_commercial_partner_country_id
 #: model:ir.model.fields,field_description:base.field_res_partner_country_id
+#: model:ir.model.fields,field_description:base.field_res_users_commercial_partner_country_id
 #: model:ir.model.fields,field_description:base.field_res_users_country_id
 #: model:ir.ui.view,arch_db:base.res_partner_view_form_private
 #: model:ir.ui.view,arch_db:base.view_company_form
@@ -9721,7 +9601,7 @@ msgstr "Menü létrehozása"
 #. module: base
 #: selection:ir.actions.server,state:0
 msgid "Create a new Record"
-msgstr "Új rekord létrehozása"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,help:base.action_res_company_form
@@ -9950,7 +9830,7 @@ msgstr "Hitelkártya támogatás az Értékesítési pont kasszához"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_phone_validation
 msgid "Crm Phone Numbers Validation"
-msgstr "CRM telefonszám érvényesítése"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.hr
@@ -10158,7 +10038,7 @@ msgstr "Cseh Köztársaság"
 #. module: base
 #: model:res.country,name:base.ci
 msgid "Côte d'Ivoire"
-msgstr "Elefántcsontpart"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_D
@@ -10167,8 +10047,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr ""
+msgid "DHL Shipping"
+msgstr "DHL szállítás"
 
 #. module: base
 #: selection:report.paperformat,format:0
@@ -10314,7 +10194,7 @@ msgstr "Tizedes elválasztó"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_filters_is_default
 msgid "Default Filter"
-msgstr "Alapértelmezett szűrő"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_theme_default
@@ -10324,7 +10204,7 @@ msgstr "Alapértelmezett téma"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_default_json_value
 msgid "Default Value (JSON format)"
-msgstr "Alapértelmezett érték (JSON formátum)"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_act_window_limit
@@ -10381,7 +10261,7 @@ msgstr "Hozzáférési jog törlése"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_barcode
 msgid "Delivery Barcode Scanning"
-msgstr "Kézbesítési Vonalkód Beolvasás"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery
@@ -10396,7 +10276,7 @@ msgstr "Minta adatok"
 #. module: base
 #: model:res.country,name:base.cd
 msgid "Democratic Republic of the Congo"
-msgstr "Kongói Demokratikus Köztársaság"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.dk
@@ -10428,11 +10308,6 @@ msgid "Dependency"
 msgstr "Függőség"
 
 #. module: base
-#: model:ir.module.module,description:base.module_test_pylint
-msgid "Deprecated empty module in favor of test-lint."
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment_description
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_name
 #: model:ir.model.fields,field_description:base.field_ir_module_category_description
@@ -10449,7 +10324,7 @@ msgstr "HTML leírás"
 #. module: base
 #: model:ir.module.module,summary:base.module_mass_mailing_themes
 msgid "Design gorgeous mails"
-msgstr "Nagyszerű levelek tervezése"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mass_mailing
@@ -10728,19 +10603,13 @@ msgstr "Dokumentumok"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_company_external_report_layout
 msgid "Document Template"
-msgstr "Dokumentum sablon"
+msgstr ""
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:1189 code:addons/base/ir/ir_model.py:1192
 #, python-format
 msgid "Document model"
 msgstr "Dokumentum modell"
-
-#. module: base
-#: code:addons/models.py:2888
-#, python-format
-msgid "Document type:"
-msgstr "Dokumentumtípus:"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_forum_doc
@@ -10802,7 +10671,6 @@ msgstr "Közvetlen szállítás"
 msgid ""
 "Duplicating a company is not allowed. Please create a new company instead."
 msgstr ""
-"Vállalat duplikálása nem engedélyezett. Hozzon létre egy új vállalatot."
 
 #. module: base
 #: code:addons/base/ir/ir_qweb/fields.py:394
@@ -10813,174 +10681,6 @@ msgstr "Az időtartam nem lehet negatív"
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_E
 msgid "E WATER SUPPLY;SEWERAGE,WASTE MANAGEMENT AND REMEDIATION ACTIVITIES"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_edi_cancellation
-msgid ""
-"EDI Cancellation\n"
-"================\n"
-"\n"
-"This module adds the next features in the cancel process:\n"
-"\n"
-"1. Button to request cancellation in the SAT was added.\n"
-"2. The cancel process in Odoo, only could be executed when the SAT status\n"
-"   is cancelled.\n"
-"3. The cancel button in the invoice is dummy if the invoice is not\n"
-"   cancelled in the SAT.\n"
-"\n"
-"Which is the new flow to cancel?\n"
-"--------------------------------\n"
-"\n"
-"A new button `(Request Cancelation)` was added on the invoice view, that\n"
-"appear when the invoice is open and the `PAC status` is `Signed`\n"
-"\n"
-"When this new button is press, send the CFDI to the PAC to try cancel it\n"
-"in the SAT system. And do not allows to cancel the invoice in Odoo until\n"
-"it was properly canceled in the SAT. (This is an automatic action that\n"
-"execute the system).\n"
-"\n"
-"If any invoice is cancelled in the SAT, and the user can not wait for the\n"
-"cron, could press the `Cancel` button, and this must be cancelled.\n"
-"\n"
-"Which are the cases supported in this module?\n"
-"---------------------------------------------\n"
-"\n"
-"**Case 1**\n"
-"\n"
-"+----------+---------+\n"
-"| System   | State   |\n"
-"+==========+=========+\n"
-"| Odoo     | Open    |\n"
-"+----------+---------+\n"
-"| PAC      | Signed  |\n"
-"+----------+---------+\n"
-"| SAT      | Valid   |\n"
-"+----------+---------+\n"
-"\n"
-"This case is when the invoice is properly signed in the SAT system. To\n"
-"cancel is necessary to press the button `Request Cancelation`, that will\n"
-"to verify that effectively the CFDI is not previously canceled in the SAT\n"
-"system and will to send it to cancel in the SAT.\n"
-"\n"
-"After of request the cancelation, could be found the next cases:\n"
-"\n"
-"*The cancel process was succesful*\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | Cancelled  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"In this case, the system will execute the next actions:\n"
-"\n"
-"1. An action will to update the PAC status (To Canceled).\n"
-"\n"
-"2. A method will be called and will try to cancel the invoice in Odoo.\n"
-"\n"
-"\n"
-"*The cancel process cannot be completed*\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"In this case, the system wait for the PAC system, and will execute the next\n"
-"action:\n"
-"\n"
-"1. A method will be called to verify if the CFDI was properly cancelled in\n"
-"the SAT system, and when the SAT status is `Cancelled` will try to cancel the\n"
-"invoice in Odoo.\n"
-"\n"
-"**Case 2**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"This case is the same that in the previous case when the cancel process\n"
-"cannot be completed.\n"
-"\n"
-"If the customer does not accept the CFDI cancelation, the cancel process\n"
-"must be aborted and the invoice must be returned to signed. For this, was\n"
-"added an action in the invoice `Revert CFDI cancellation`, that could be\n"
-"called in the `Actions` of it.\n"
-"\n"
-"\n"
-"**Case 3**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Cancelled  |\n"
-"+----------+------------+\n"
-"\n"
-"The system executes a scheduled action that will cancel the invoice in Odoo,\n"
-"and in that process, the PAC status must be updated to `Cancelled`.\n"
-"\n"
-"\n"
-"**Case 4**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Cancel     |\n"
-"+----------+------------+\n"
-"| PAC      | Signed     |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"The system executes a scheduled action that will check that the SAT status\n"
-"continues `Valid` and if yes, the invoice must be returned to `Open`\n"
-"(Without generate a new CFDI). For this:\n"
-"\n"
-"1. If the invoice does not has a journal entry, a new will be generated and\n"
-"the invoice state must be changed to `Open`.\n"
-"\n"
-"2. If the journal entry in the invoice has a revert, it will be cancelled\n"
-"and the invoice state must be changed to `Open`.\n"
-"\n"
-"**Case 5**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Cancel     |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"This is the same case that in the previous one, but extra after that the\n"
-"invoice is open again, the PAC status must be updated to 'Signed.'\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_cancellation
-msgid "EDI Cancellation for Mexican Localization"
 msgstr ""
 
 #. module: base
@@ -11145,7 +10845,7 @@ msgstr "Email átjáró"
 #: model:ir.module.category,name:base.module_category_mass_mailing
 #: model:ir.module.module,shortdesc:base.module_mass_mailing
 msgid "Email Marketing"
-msgstr "Email Marketing"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_form_simple_modif
@@ -11190,7 +10890,7 @@ msgstr "Üres függőség itt %r"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_D
 msgid "Energy supply"
-msgstr "Tápellátás"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
@@ -11214,7 +10914,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_R
 msgid "Entertainment"
-msgstr "Szórakoztatás"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gq
@@ -11348,7 +11048,7 @@ msgstr "Rendezvényi értékesítések"
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_server_action_form
 msgid "Example of Python code"
-msgstr "Python kód példa"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_gamification_sale_crm
@@ -11377,18 +11077,18 @@ msgstr "Példák"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion_exclusion_id
 msgid "Exclusion Module"
-msgstr "Kizárás modul"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_module_exclusion_ids
 #: model:ir.ui.view,arch_db:base.module_form
 msgid "Exclusions"
-msgstr "Kizárások"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_module_category_exclusive
 msgid "Exclusive"
-msgstr "Kizárólagos"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_cron_view_form
@@ -11398,7 +11098,7 @@ msgstr ""
 #. module: base
 #: selection:ir.actions.server,state:0
 msgid "Execute Python Code"
-msgstr "Python kód futtatása"
+msgstr ""
 
 #. module: base
 #: selection:ir.actions.server,state:0
@@ -11729,15 +11429,6 @@ msgid "F CONSTRUCTION"
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_mail_server.py:128
-#, python-format
-msgid ""
-"Failed to encode the address %s\n"
-"from mail header:\n"
-"%s"
-msgstr ""
-
-#. module: base
 #: model:res.country,name:base.fk
 msgid "Falkland Islands"
 msgstr "Falkland-szigetek"
@@ -11933,12 +11624,6 @@ msgid "Field names must be unique per model."
 msgstr "Mező neveknek egyedinek kell lennie modellenként."
 
 #. module: base
-#: code:addons/model.py:143
-#, python-format
-msgid "Field:"
-msgstr "Mező:"
-
-#. module: base
 #: model:ir.actions.act_window,name:base.action_model_fields
 #: model:ir.model,name:base.model_ir_model_fields
 #: model:ir.model.fields,field_description:base.field_ir_model_field_id
@@ -11956,16 +11641,10 @@ msgid "Fields Description"
 msgstr "Mezők Leírása"
 
 #. module: base
-#: code:addons/models.py:2564
-#, python-format
-msgid "Fields:"
-msgstr ""
-
-#. module: base
-#: code:addons/base/ir/ir_model.py:595
+#: code:addons/base/ir/ir_model.py:582
 #, python-format
 msgid "Fields: %s"
-msgstr "Mezők: %s"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.fj
@@ -12064,7 +11743,7 @@ msgstr "A szűrők egyszerre csak egy felhasználó részére láthatóak"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_K
 msgid "Finance/Insurance"
-msgstr "Pénzügy/Biztosítás"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_accountant
@@ -12079,29 +11758,6 @@ msgstr "Finnország"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mail_push
 msgid "Firebase Cloud Messaging"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_reports_closing
-msgid ""
-"Fiscal Reports for Closing Entry\n"
-"================================\n"
-"\n"
-"Trial Balance report is complemented to allow generate the closing entry\n"
-"(A.K.A Month 13th move)\n"
-"\n"
-"Configuration\n"
-"=============\n"
-"\n"
-"Steps to get the report:\n"
-"\n"
-"1. The journal entry for transfer of exercises must be generated manually\n"
-"   with the end date of the fiscal year that is closing. And must be posted.\n"
-"\n"
-"2. This entry must be marked as closing entry for the fiscal year.\n"
-"\n"
-"3. The trial balance Month 13 report must be generated with dates for all the\n"
-"   fiscal year to report.\n"
 msgstr ""
 
 #. module: base
@@ -12122,7 +11778,7 @@ msgstr "Folio 27  210 x 330 mm"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_I
 msgid "Food"
-msgstr "Étel"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company_report_footer
@@ -12273,7 +11929,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.gf
 msgid "French Guiana"
-msgstr "Francia Guyana"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
@@ -12283,7 +11939,7 @@ msgstr "Francia bérszámfelytés"
 #. module: base
 #: model:res.country,name:base.pf
 msgid "French Polynesia"
-msgstr "Francia Polinézia"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.tf
@@ -12423,7 +12079,7 @@ msgstr "Általános beállítások"
 #: model:ir.ui.menu,name:base.menu_wizard_update_translations
 #: model:ir.ui.view,arch_db:base.wizard_update_translations
 msgid "Generate Missing Terms"
-msgstr "Hiányzó kifejezések generálása"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.ir_property_view_search
@@ -12696,12 +12352,12 @@ msgstr "Csoportok (globális, ha nincs csoport)"
 #. module: base
 #: model:res.country,name:base.gp
 msgid "Guadeloupe"
-msgstr "Guadeloupe"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gu
 msgid "Guam"
-msgstr "Guam"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gt
@@ -12726,7 +12382,7 @@ msgstr "Guinea"
 #. module: base
 #: model:res.country,name:base.gw
 msgid "Guinea-Bissau"
-msgstr "Bissau-Guineai Köztársaság"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gy
@@ -12821,7 +12477,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.hm
 msgid "Heard Island and McDonald Islands"
-msgstr "Heard-sziget és McDonald-szigetek"
+msgstr ""
 
 #. module: base
 #: selection:ir.translation,type:0
@@ -13052,7 +12708,7 @@ msgstr "Órák"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_T
 msgid "Households"
-msgstr "Háztartások"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_cron_numbercall
@@ -13244,7 +12900,7 @@ msgstr "IT szolgáltatások"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_J
 msgid "IT/Communication"
-msgstr "Informatika/Kommunikáció"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.is
@@ -13463,12 +13119,12 @@ msgstr "Ütköztetett alkalmazások"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_module_uninstall_model_ids
 msgid "Impacted data models"
-msgstr "Érintett adaatmodellek"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_module_uninstall_module_ids
 msgid "Impacted modules"
-msgstr "Érintett modulok"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_sequence_implementation
@@ -13495,12 +13151,12 @@ msgstr "Importálás / Exportálás"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_camt
 msgid "Import CAMT Bank Statement"
-msgstr "CAMT bankkivonat importálása"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_csv
 msgid "Import CSV Bank Statement"
-msgstr "CSV bankkivonat importálása"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_ofx
@@ -13525,11 +13181,6 @@ msgid "Import exchange rates from the Internet.\n"
 msgstr "Átváltási árfolyamok importálása az internetről.\n"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_account_reports_cash_flow
-msgid "Improved Cash Flow Statement"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_modules
 #: model:ir.model.fields,field_description:base.field_ir_model_modules
 msgid "In Apps"
@@ -13538,7 +13189,7 @@ msgstr "Alkalmazásokban"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_iap
 msgid "In-App Purchases"
-msgstr "In-App vásárlások"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_currency_search
@@ -13580,22 +13231,22 @@ msgstr "Indiai - Főkönyvi kimutatások"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_purchase
 msgid "Indian - Purchase Report(GST)"
-msgstr "India - Beszerzés riport (GST)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_sale
 msgid "Indian - Sale Report(GST)"
-msgstr "India - Értékesítés riport (GST)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_schedule6
 msgid "Indian - Schedule VI Accounting"
-msgstr "India - Schedule VI könyvelés"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_stock
 msgid "Indian - Stock Report(GST)"
-msgstr "India - Részvény riport (GST)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_hr_payroll
@@ -13620,7 +13271,7 @@ msgstr "Indonézia"
 #: model:ir.ui.view,arch_db:base.res_partner_industry_view_form
 #: model:ir.ui.view,arch_db:base.res_partner_industry_view_tree
 msgid "Industry"
-msgstr "Iparág"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_info
@@ -13878,7 +13529,7 @@ msgstr ""
 #: code:addons/base/ir/ir_default.py:68
 #, python-format
 msgid "Invalid field %s.%s"
-msgstr "Érvénytelen mező %s.%s"
+msgstr ""
 
 #. module: base
 #: sql_constraint:ir.ui.view:0
@@ -14153,11 +13804,6 @@ msgid "Kontni načrt za gospodarske družbe"
 msgstr "Kontni načrt za gospodarske družbe"
 
 #. module: base
-#: model:res.country,name:base.xk
-msgid "Kosovo"
-msgstr "Koszovó"
-
-#. module: base
 #: model:res.country,name:base.kw
 msgid "Kuwait"
 msgstr "Kuvait"
@@ -14165,7 +13811,7 @@ msgstr "Kuvait"
 #. module: base
 #: model:res.country,name:base.kg
 msgid "Kyrgyzstan"
-msgstr "Kirgizisztán"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_L
@@ -15099,7 +14745,7 @@ msgstr "Marketing"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_marketing_automation
 msgid "Marketing Automation"
-msgstr "Marketing automatizálás"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ma
@@ -15119,7 +14765,7 @@ msgstr "Marshall-szigetek"
 #. module: base
 #: model:res.country,name:base.mq
 msgid "Martinique"
-msgstr "Martinique"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_themes
@@ -15276,7 +14922,7 @@ msgstr "MIME-típus"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_B
 msgid "Mining"
-msgstr "Bányászat"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.sequence_view
@@ -15447,12 +15093,6 @@ msgid "Model on which the server action runs."
 msgstr ""
 
 #. module: base
-#: code:addons/model.py:142 code:addons/model.py:152
-#, python-format
-msgid "Model:"
-msgstr ""
-
-#. module: base
 #: model:ir.actions.act_window,name:base.action_model_model
 #: model:ir.model,name:base.model_ir_model
 #: model:ir.ui.menu,name:base.ir_model_model_menu
@@ -15552,7 +15192,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.md
 msgid "Moldova"
-msgstr "Moldova"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mc
@@ -15656,11 +15296,6 @@ msgid "N ADMINISTRATIVE AND SUPPORT SERVICE ACTIVITIES"
 msgstr ""
 
 #. module: base
-#: model:res.country,vat_label:base.gt
-msgid "NIT"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_report_xml_name
 #: model:ir.model.fields,field_description:base.field_ir_actions_name
 #: model:ir.model.fields,field_description:base.field_ir_actions_name_271
@@ -15731,7 +15366,7 @@ msgstr "Hollandia - könyvelés"
 #. module: base
 #: model:res.country,name:base.nc
 msgid "New Caledonia"
-msgstr "Új-Kaledónia"
+msgstr ""
 
 #. module: base
 #: code:addons/base/module/wizard/base_export_language.py:18
@@ -15823,7 +15458,7 @@ msgstr "Niue"
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_settings_view_form
 msgid "No Record Found"
-msgstr "Nem található rekord"
+msgstr ""
 
 #. module: base
 #: code:addons/models.py:1352
@@ -16540,19 +16175,8 @@ msgid "Odoo Mexican Localization Reports"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_reports_closing
-msgid "Odoo Mexican Localization Reports for Closing"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_customs
 msgid "Odoo Mexico Localization for Invoice with customs Number"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_sale_coupon
-#: model:ir.module.module,summary:base.module_l10n_mx_edi_sale_coupon
-msgid "Odoo Mexico Localization for Sale Coupon"
 msgstr ""
 
 #. module: base
@@ -17368,12 +16992,6 @@ msgid "Open a Window"
 msgstr "Ablak megnyitása"
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:1215 code:addons/models.py:2888
-#, python-format
-msgid "Operation:"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_crm
 msgid "Opportunity to Quotation"
 msgstr "Lehetőséget árajánlattá alakít"
@@ -17958,11 +17576,6 @@ msgid "Payment Acquirer: Stripe Implementation"
 msgstr "Fizetést lebonyolító: Stripe beágyazása"
 
 #. module: base
-#: model:ir.module.module,summary:base.module_payment_stripe_sca
-msgid "Payment Acquirer: Stripe Implementation for the EU PSD2"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_payment_transfer
 msgid "Payment Acquirer: Transfer Implementation"
 msgstr "Fizetést lebonyolító: Utalás beágyazása"
@@ -18331,7 +17944,7 @@ msgstr "Termék e-mail sablon"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_plm
 msgid "Product Lifecycle Management (PLM)"
-msgstr "Termék életciklus menedzsment (PLM)"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_product_extended
@@ -18726,7 +18339,7 @@ msgstr "Csak olvasható"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_L
 msgid "Real Estate"
-msgstr "Ingatlan"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_data_form
@@ -18773,14 +18386,6 @@ msgstr "Adatbázis-rekord nem létezik vagy törlésre került."
 #: model:ir.ui.view,arch_db:base.view_rule_tree
 msgid "Record rules"
 msgstr "Az adatbázis-rekord bejegyzési szabályai"
-
-#. module: base
-#: code:addons/base/ir/ir_actions.py:245 code:addons/models.py:2789
-#: code:addons/models.py:2875 code:addons/models.py:2889
-#: code:addons/models.py:3235 code:addons/models.py:4020
-#, python-format
-msgid "Records:"
-msgstr ""
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_hr_recruitment
@@ -19180,7 +18785,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sms
 msgid "SMS gateway"
-msgstr "SMS átjáró"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_port
@@ -19215,12 +18820,12 @@ msgstr "Szent Barthélémy"
 #. module: base
 #: model:res.country,name:base.sh
 msgid "Saint Helena, Ascension and Tristan da Cunha"
-msgstr "Szent Ilona, Ascension és Tristan da Cunha Egyesült Királyság"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.kn
 msgid "Saint Kitts and Nevis"
-msgstr "Saint Kitts és Nevis"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.lc
@@ -19240,7 +18845,7 @@ msgstr "Saint Pierre és Miquelon"
 #. module: base
 #: model:res.country,name:base.vc
 msgid "Saint Vincent and the Grenadines"
-msgstr "Saint Vincent és a Grenadine-szigetek"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_contract_salary
@@ -19294,7 +18899,7 @@ msgstr "Értékesítések & Beszerzések"
 #: model:ir.module.module,shortdesc:base.module_sales_team
 #: model:ir.module.module,summary:base.module_sales_team
 msgid "Sales Channels"
-msgstr "Értékesítési csatornák"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_expense
@@ -19419,7 +19024,7 @@ msgstr ""
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_M
 msgid "Scientific"
-msgstr "Tudományos"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hw_screen
@@ -19697,7 +19302,7 @@ msgstr "Szerver műveletek"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_cron_ir_actions_server_id
 msgid "Server action"
-msgstr "Szerverművelet"
+msgstr ""
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_11
@@ -19788,7 +19393,7 @@ msgstr "Szállítási cím"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_base_module_uninstall_show_all
 msgid "Show All"
-msgstr "Mindent mutat"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_currency_search
@@ -19813,7 +19418,7 @@ msgstr "Sierra Leone"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sign
 msgid "Sign"
-msgstr "Aláírás"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_users_signature
@@ -19993,7 +19598,7 @@ msgstr "Dél-Afrikai Köztársaság"
 #. module: base
 #: model:res.country.group,name:base.south_america
 msgid "South America"
-msgstr "Dél-Amerika"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gs
@@ -20103,7 +19708,7 @@ msgstr "Állam neve"
 #. module: base
 #: model:res.country,name:base.ps
 msgid "State of Palestine"
-msgstr "Palesztina"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_ids
@@ -20210,12 +19815,6 @@ msgid "Stripe Payment Acquirer"
 msgstr "Stripe fizetést lebonyolító"
 
 #. module: base
-#: model:ir.module.module,description:base.module_payment_stripe_sca
-#: model:ir.module.module,shortdesc:base.module_payment_stripe_sca
-msgid "Stripe Payment Acquirer - Strong Customer Authentication Update"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_web_studio
 msgid "Studio"
 msgstr ""
@@ -20294,7 +19893,7 @@ msgstr "Felmérések"
 #. module: base
 #: model:res.country,name:base.sj
 msgid "Svalbard and Jan Mayen"
-msgstr "Spitzbergák és Jan Mayen-sziget"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.sz
@@ -20362,7 +19961,7 @@ msgstr "Rendszerfrissítés"
 #. module: base
 #: model:res.country,name:base.st
 msgid "São Tomé and Príncipe"
-msgstr "São Tomé és Príncipe"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_T
@@ -20447,573 +20046,6 @@ msgstr "Cél ablak"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_cash_basis_base_account
 msgid "Tax Cash Basis Edit Base Account"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_tax_cash_basis
-msgid "Tax Cash Basis Entries at Payment Date"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_tax_cash_basis
-msgid ""
-"Tax Cash Basis Entries at Payment Date\n"
-"======================================\n"
-"\n"
-"Allow to create the Journal Entries for Taxes at date of payment.\n"
-"The following tests cases pretend to enlight you on what is expected of each\n"
-"one according to Mexican requirements.\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment before Invoice\n"
-"-------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                1160    USD\n"
-"                Revenue                 1000       -1000    USD\n"
-"                Taxes to Collect         160        -160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1450                1160    USD\n"
-"                Receivable              1450       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable           290                   0    USD\n"
-"                Gain Exchange rate       290           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Taxes to Collect     200                 160    USD\n"
-"                Taxes to Paid            200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 1250.00\n"
-"            - Paid to SAT MXN 200.00\n"
-"            - Have a difference of MXN 40.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Loss Exchange rate    40                   0    USD\n"
-"                Taxes to Collect          40           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment after Invoice\n"
-"------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1450                1160    USD\n"
-"                Revenue                 1250       -1000    USD\n"
-"                Taxes to Collect         200        -160    USD\n"
-"\n"
-"        Payment issued today in USD at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                 928                1160    USD\n"
-"                Receivable               928       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   522                   0    USD\n"
-"                Receivable               522           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Taxes to Collect     128                 160    USD\n"
-"                Taxes to Paid            128        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 800.00\n"
-"            - Paid to SAT MXN 128.00\n"
-"            - Have a difference of MXN -72.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Gain in Exchange Rate Difference\n"
-"\n"
-"            Taxes to Collect      72                   0    USD\n"
-"                Gain Exchange rate        72           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment same day than Invoice\n"
-"--------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1450                1160    USD\n"
-"                Revenue                 1250       -1000    USD\n"
-"                Taxes to Collect         200        -160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1450                1160    USD\n"
-"                Receivable              1450       -1160    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Taxes to Collect     200                 160    USD\n"
-"                Taxes to Paid            200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 1250.00\n"
-"            - Paid to SAT MXN 200.00\n"
-"            - Have no difference for Taxes to Collect\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Two Days Ago (USD)\n"
-"--------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                   -      -\n"
-"                Revenue                 1000           -      -\n"
-"                Taxes to Collect         160           -      -\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1160                 928    USD\n"
-"                Receivable              1160        -928    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   0      -\n"
-"                Tax Base Account        1000           0      -\n"
-"            Taxes to Collect     160                   0      -\n"
-"                Taxes to Paid            160           0      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case):\n"
-"              * Tax Base Account MXN 1000.00\n"
-"            - Paid to SAT MXN 160.00\n"
-"            - Have no difference for Taxes to Collect\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (USD) Payment Today (MXN)\n"
-"-------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                1160    USD\n"
-"                Revenue                 1000       -1000    USD\n"
-"                Taxes to Collect         160        -160    USD\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                 928                   -      -\n"
-"                Receivable               928           -      -\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   232                 232    USD\n"
-"                Receivable               232        -232    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                   0    USD\n"
-"                Tax Base Account         800           0    USD\n"
-"            Taxes to Collect     128                   0    USD  # (I'd expect the same value as in the invoice for amount_currency in tax: 160 USD) \n"
-"                Taxes to Paid            128           0    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 800.00\n"
-"            - Paid to SAT MXN 128.00\n"
-"            - Have a difference of MXN -32.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Gain in Exchange Rate Difference\n"
-"\n"
-"            Taxes to Collect      32                   0    USD\n"
-"                Gain Exchange rate        32           0    USD\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Today (MXN)\n"
-"-------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                   -      -\n"
-"                Revenue                 1000           -      -\n"
-"                Taxes to Collect         160           -      -\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1160                   -      -\n"
-"                Receivable              1160           -      -\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   -      -\n"
-"                Tax Base Account        1000           -      -\n"
-"            Taxes to Collect     160                   -      -\n"
-"                Taxes to Paid            160           -      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 1000.00\n"
-"            - Paid to SAT MXN 160.00\n"
-"            - Have no difference for Taxes to Collect\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment before Invoice (Supplier)\n"
-"------------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                1000    USD\n"
-"            Unpaid Taxes         160                 160    USD\n"
-"\n"
-"                Payable                 1160       -1160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1450                1160    USD\n"
-"                Bank                    1450       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   290                   0    USD\n"
-"                Payable                  290           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Creditable Tax       200                 160    USD\n"
-"                Unpaid Taxes             200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1250.00\n"
-"            - Creditable Tax MXN 200.00\n"
-"            - Have a difference of MXN -40.00 for Unpaid Taxes that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Unpaid Taxes          40                   0    USD\n"
-"                Gain Exchange rate        40           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment after Invoice (Supplier)\n"
-"-----------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1250                1000    USD\n"
-"            Unpaid Taxes         200                 160    USD\n"
-"\n"
-"                Payable                 1450       -1160    USD\n"
-"\n"
-"        Payment issued today in USD at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              928                1160    USD\n"
-"                Bank                     928       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              522                   0    USD\n"
-"                Gain Exchange rate       522           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Creditable Tax       128                 160    USD\n"
-"                Unpaid Taxes             128        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 800.00\n"
-"            - Creditable Tax MXN 128.00\n"
-"            - Have a difference of MXN 72.00 for Unpaid Taxes that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Loss Exchange rate    72                   0    USD\n"
-"                Unpaid Taxes              72           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment same day than Invoice (Supplier)\n"
-"-------------------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1250                1000    USD\n"
-"            Unpaid Taxes         200                 160    USD\n"
-"\n"
-"                Payable                 1450       -1160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1450                1160    USD\n"
-"                Bank                    1450       -1160    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Creditable Tax       200                 160    USD\n"
-"                Unpaid Taxes             200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1250.00\n"
-"            - Creditable Tax MXN 200.00\n"
-"            - Have no difference for Unpaid Taxes\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Two Days Ago (USD) (Supplier)\n"
-"-------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                   -      -\n"
-"            Unpaid Taxes         160                   -      -\n"
-"\n"
-"                Payable                 1160           -      -\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1160                 928    USD\n"
-"                Bank                    1160        -928    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   0      -\n"
-"                Tax Base Account        1000           0      -\n"
-"            Creditable Tax       160                   0      -\n"
-"                Unpaid Taxes             160           0      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1000.00\n"
-"            - Creditable Tax MXN 160.00\n"
-"            - Have no difference for Unpaid Taxes\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (USD) Payment Today (MXN) (Supplier)\n"
-"------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                1000    USD\n"
-"            Unpaid Taxes         160                 160    USD\n"
-"\n"
-"                Payable                 1160       -1160    USD\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              928                   -      -\n"
-"                Bank                     928           -      -\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              232                 232    USD\n"
-"                Gain Exchange rate       522        -232    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                   0    USD\n"
-"                Tax Base Account         800           0    USD\n"
-"            Creditable Tax       128                   0    USD  # (I'd expect the same value as in the invoice for amount_currency in tax: 160 USD) \n"
-"                Unpaid Taxes             128           0    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 800.00\n"
-"            - Creditable Tax MXN 128.00\n"
-"            - Have a difference of MXN 32.00 for Unpaid Taxes that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Loss Exchange rate    32                   0    USD\n"
-"                Unpaid Taxes              32           0    USD\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Today (MXN) (Supplier)\n"
-"------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                   -      -\n"
-"            Unpaid Taxes         160                   -      -\n"
-"\n"
-"                Payable                 1160           -      -\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1160                   -      -\n"
-"                Bank                    1160           -      -\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   -      -\n"
-"                Tax Base Account        1000           -      -\n"
-"            Creditable Tax       160                   -      -\n"
-"                Unpaid Taxes             160           -      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1000.00\n"
-"            - Creditable Tax MXN 160.00\n"
-"            - Have no difference for Unpaid Taxes\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Credit Note Today (MXN) (Customer)\n"
-"----------------------------------------------------------------\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1450                1160    USD\n"
-"                Revenue                 1250       -1000    USD\n"
-"                Taxes to Collect         200        -160    USD\n"
-"\n"
-"        Credit Note issued today in USD at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Revenue              800                1000    USD\n"
-"            Taxes to Collect     128                 160    USD\n"
-"\n"
-"                Receivable               928       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   522                   0    USD\n"
-"                Receivable               522           0    USD\n"
-"\n"
-"        And two Tax Cash Basis Entry are generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Taxes to Collect     128                 160    USD\n"
-"                Taxes to Paid            128        -160    USD\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Taxes to Paid        128                 160    USD\n"
-"                Taxes to Collect         128        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 800.00 and MXN -800.00\n"
-"            - Paid to SAT MXN 0.00\n"
-"            - Have a difference of MXN -72.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Gain in Exchange Rate Difference\n"
-"\n"
-"            Taxes to Collect      72                   0    USD\n"
-"                Gain Exchange rate        72           0    USD\n"
-"\n"
-"Credits\n"
-"=======\n"
-"\n"
-"**Contributors**\n"
-"\n"
-"* Nhomar Hernandez <nhomar@vauxoo.com> (Planner/Auditor)\n"
-"* Luis Torres <luis_t@vauxoo.com> (Auditor)\n"
-"* Humberto Arocha <luis_t@vauxoo.com> (Planner/Developer)\n"
 msgstr ""
 
 #. module: base
@@ -21103,11 +20135,6 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_performance
 msgid "Test Performance"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_rpc
-msgid "Test RPC"
 msgstr ""
 
 #. module: base
@@ -21458,8 +20485,14 @@ msgstr "Az egyedüli előre definiált változók a következők"
 #. module: base
 #: code:addons/model.py:121
 #, python-format
-msgid "The operation cannot be completed:"
+msgid ""
+"The operation cannot be completed, probably due to the following:\n"
+"- deletion: you may be trying to delete a record while other records still reference it\n"
+"- creation/update: a mandatory field is not correctly set"
 msgstr ""
+"A művelet nem végezhető el, valószínűleg a következők miatt:\n"
+"- törlés: rekordot szeretne törölni, de arra még van hivatkozás\n"
+"- létrehozás/frissítés: egy szükséges mező nincs rendesen beállítva/kitöltve"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_fields_domain
@@ -21526,8 +20559,6 @@ msgid ""
 "The requested operation cannot be completed due to record rules: Document "
 "type: %s, Operation: %s, Records: %s, User: %s"
 msgstr ""
-"A kért művelet nem hajtható végre rekord szabályok miatt: : Dokumentum "
-"típus: %s, Művelet: %s, Rekord: %s, Felhasználó: %s"
 
 #. module: base
 #: code:addons/models.py:2551 code:addons/models.py:2760
@@ -21545,7 +20576,7 @@ msgstr ""
 #. module: base
 #: sql_constraint:res.currency:0
 msgid "The rounding factor must be greater than 0!"
-msgstr "A kerekítési faktornak 0-nál nagyobbnak kell lennie!"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_language_install
@@ -21558,14 +20589,6 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
 msgid "The selected modules have been updated / installed !"
 msgstr "A kiválasztott modulok telepítve/frissítve lettek!"
-
-#. module: base
-#: code:addons/base/module/module.py:546
-#, python-format
-msgid ""
-"The server is busy right now, module operations are not possible at this "
-"time, please try again later."
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state_code
@@ -21902,7 +20925,7 @@ msgstr "Felső margó (mm)"
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_count
 msgid "Total number of records in this model"
-msgstr "Rekordok száma ebben a modellben"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_point_of_sale
@@ -21948,7 +20971,7 @@ msgstr "Ideiglenes: Igaz"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_transifex
 msgid "Transifex integration"
-msgstr "Transifex integráció"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_groups_trans_implied_ids
@@ -22033,7 +21056,7 @@ msgstr "Fordítások"
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_H
 msgid "Transportation"
-msgstr "Szállítmányozás"
+msgstr ""
 
 #. module: base
 #: selection:ir.actions.act_window,view_type:0
@@ -22118,13 +21141,6 @@ msgid ""
 "- 'Add Followers': add followers to a record (available in Discuss)\n"
 "- 'Send Email': automatically send an email (available in email_template)"
 msgstr ""
-"Szerver akció típusa. A következő értékek állnak rendelkezésre:\n"
-"- 'Python kód végrehajtása': python kód blokk végrehajtása\n"
-"- 'Új rekord létrehozása vagy másolása': új rekord létrehozása új értékekkel, vagy létező rekord másolása\n"
-"- 'Rekord írása': létező rekord értékeinek frissítése\n"
-"- 'Több akció végrehajtása': olyan akció definiálása, mely több más szerver akciót hajt végre\n"
-"- 'Követők hozzáadása': követők hozzáadása egy rekordhoz (Csevegés app-ban elérhető)\n"
-"- 'E-mail küdése': e-mail küldése automatikusan (e-mail sablonban elérhető)"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_model_constraint_type
@@ -22156,11 +21172,6 @@ msgstr "Egyesült Királyság - Könyvelés"
 #: model:ir.module.module,shortdesc:base.module_l10n_uk_reports
 msgid "UK - Accounting Reports"
 msgstr "UK - Főkönyvi kimutatások"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_uk_reports_hmrc
-msgid "UK - Accounting Reports to HMRC"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_delivery_ups
@@ -22317,13 +21328,7 @@ msgid "Unknown"
 msgstr "Ismeretlen"
 
 #. module: base
-#: code:addons/models.py:833
-#, python-format
-msgid "Unknown database error: '%s'"
-msgstr ""
-
-#. module: base
-#: code:addons/models.py:996
+#: code:addons/models.py:994
 #, python-format
 msgid "Unknown database identifier '%s'"
 msgstr "Ismeretlen adatbázis azonosító '%s'"
@@ -22420,7 +21425,7 @@ msgstr "Feltételek frissítése"
 #. module: base
 #: selection:ir.actions.server,state:0
 msgid "Update the Record"
-msgstr "Rekord frissítése"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_company_report_form
@@ -22589,15 +21594,6 @@ msgid "User-defined Filters"
 msgstr "A felhasználó által meghatározott szűrők"
 
 #. module: base
-#: code:addons/base/ir/ir_actions.py:245 code:addons/base/ir/ir_model.py:1215
-#: code:addons/models.py:2564 code:addons/models.py:2789
-#: code:addons/models.py:2875 code:addons/models.py:2889
-#: code:addons/models.py:3235 code:addons/models.py:4020
-#, python-format
-msgid "User:"
-msgstr "Felhasználó"
-
-#. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_user
 msgid "Username"
 msgstr "Felhasználói név"
@@ -22623,7 +21619,7 @@ msgstr "Felhasználók"
 #. module: base
 #: model:ir.ui.menu,name:base.menu_users
 msgid "Users & Companies"
-msgstr "Felhasználók & Vállalatok"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_groups_form
@@ -22885,7 +21881,7 @@ msgstr ""
 #: code:addons/base/ir/ir_model.py:583
 #, python-format
 msgid "View: %s"
-msgstr "Nézet: 1%s"
+msgstr ""
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_ui_view
@@ -22947,7 +21943,7 @@ msgstr "WMS összes költség"
 #. module: base
 #: model:res.country,name:base.wf
 msgid "Wallis and Futuna"
-msgstr "Wallis és Futuna"
+msgstr ""
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_warehouse
@@ -23016,7 +22012,7 @@ msgstr "Web szerkesztő"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_enterprise
 msgid "Web Enterprise"
-msgstr "Web vállalat"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_gantt
@@ -23607,7 +22603,7 @@ msgstr "base.update.translations"
 #. module: base
 #: selection:ir.model.fields,ttype:0
 msgid "binary"
-msgstr "bináris"
+msgstr ""
 
 #. module: base
 #: selection:ir.model.fields,ttype:0
@@ -23622,7 +22618,7 @@ msgstr ""
 #. module: base
 #: selection:ir.model.fields,ttype:0
 msgid "char"
-msgstr "szöveg"
+msgstr ""
 
 #. module: base
 #: selection:base.language.export,state:0
@@ -23643,7 +22639,7 @@ msgstr "adatbázis azonosító"
 #. module: base
 #: selection:ir.model.fields,ttype:0
 msgid "date"
-msgstr "dátum"
+msgstr ""
 
 #. module: base
 #: selection:ir.model.fields,ttype:0
@@ -23782,7 +22778,7 @@ msgstr "kap"
 #. module: base
 #: selection:ir.model.fields,ttype:0
 msgid "html"
-msgstr "html"
+msgstr ""
 
 #. module: base
 #: selection:base.language.install,state:0
@@ -24194,16 +23190,6 @@ msgid "test-limits"
 msgstr "határérték teszt"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_test_lint
-msgid "test-lint"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_translation_import
-msgid "test-translation-import"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_test_uninstall
 msgid "test-uninstall"
 msgstr "teszt eltávolítás"
@@ -24216,7 +23202,7 @@ msgstr "Átalakítás teszt"
 #. module: base
 #: selection:ir.model.fields,ttype:0
 msgid "text"
-msgstr "szöveg"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_config_installer

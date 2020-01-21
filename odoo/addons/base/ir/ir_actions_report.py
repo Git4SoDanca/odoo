@@ -23,7 +23,6 @@ from contextlib import closing
 from distutils.version import LooseVersion
 from reportlab.graphics.barcode import createBarcodeDrawing
 from PyPDF2 import PdfFileWriter, PdfFileReader
-from collections import OrderedDict
 
 
 _logger = logging.getLogger(__name__)
@@ -45,7 +44,6 @@ def _get_wkhtmltopdf_bin():
 
 # Check the presence of Wkhtmltopdf and return its version at Odoo start-up
 wkhtmltopdf_state = 'install'
-wkhtmltopdf_dpi_zoom_ratio = False
 try:
     process = subprocess.Popen(
         [_get_wkhtmltopdf_bin(), '--version'], stdout=subprocess.PIPE, stderr=subprocess.PIPE
@@ -63,8 +61,6 @@ else:
             wkhtmltopdf_state = 'upgrade'
         else:
             wkhtmltopdf_state = 'ok'
-        if LooseVersion(version) >= LooseVersion('0.12.2'):
-            wkhtmltopdf_dpi_zoom_ratio = True
 
         if config['workers'] == 1:
             _logger.info('You need to start Odoo with at least two workers to print a pdf version of the reports.')
@@ -238,19 +234,14 @@ class IrActionsReport(models.Model):
             else:
                 command_args.extend(['--margin-top', str(paperformat_id.margin_top)])
 
-            dpi = None
             if specific_paperformat_args and specific_paperformat_args.get('data-report-dpi'):
-                dpi = int(specific_paperformat_args['data-report-dpi'])
+                command_args.extend(['--dpi', str(specific_paperformat_args['data-report-dpi'])])
             elif paperformat_id.dpi:
                 if os.name == 'nt' and int(paperformat_id.dpi) <= 95:
                     _logger.info("Generating PDF on Windows platform require DPI >= 96. Using 96 instead.")
-                    dpi = 96
+                    command_args.extend(['--dpi', '96'])
                 else:
-                    dpi = paperformat_id.dpi
-            if dpi:
-                command_args.extend(['--dpi', str(dpi)])
-                if wkhtmltopdf_dpi_zoom_ratio:
-                    command_args.extend(['--zoom', str(96.0 / dpi)])
+                    command_args.extend(['--dpi', str(paperformat_id.dpi)])
 
             if specific_paperformat_args and specific_paperformat_args.get('data-report-header-spacing'):
                 command_args.extend(['--header-spacing', str(specific_paperformat_args['data-report-header-spacing'])])
@@ -444,10 +435,7 @@ class IrActionsReport(models.Model):
             )
             return barcode.asString('png')
         except (ValueError, AttributeError):
-            if barcode_type == 'Code128':
-                raise ValueError("Cannot convert into barcode.")
-            else:
-                return self.barcode('Code128', value, width=width, height=height, humanreadable=humanreadable)
+            raise ValueError("Cannot convert into barcode.")
 
     @api.multi
     def render_template(self, template, values=None):
@@ -605,7 +593,7 @@ class IrActionsReport(models.Model):
         if isinstance(self.env.cr, TestCursor):
             return self.with_context(context).render_qweb_html(res_ids, data=data)[0]
 
-        save_in_attachment = OrderedDict()
+        save_in_attachment = {}
         if res_ids:
             # Dispatch the records by ones having an attachment and ones requesting a call to
             # wkhtmltopdf.

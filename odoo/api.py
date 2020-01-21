@@ -55,7 +55,7 @@ from weakref import WeakSet
 from decorator import decorator
 from werkzeug.local import Local, release_local
 
-from odoo.tools import frozendict, classproperty, pycompat
+from odoo.tools import frozendict, classproperty
 
 _logger = logging.getLogger(__name__)
 
@@ -188,16 +188,6 @@ def onchange(*args):
                 'warning': {'title': "Warning", 'message': "What is this?"},
             }
 
-        .. danger::
-
-            Since ``@onchange`` returns a recordset of pseudo-records,
-            calling any one of the CRUD methods
-            (:meth:`create`, :meth:`read`, :meth:`write`, :meth:`unlink`)
-            on the aforementioned recordset is undefined behaviour,
-            as they potentially do not exist in the database yet.
-
-            Instead, simply set the record's field like shown in the example
-            above or call the :meth:`update` method.
 
         .. warning::
 
@@ -751,7 +741,6 @@ class Environment(Mapping):
         self.cr, self.uid, self.context = self.args = (cr, uid, frozendict(context))
         self.registry = Registry(cr.dbname)
         self.cache = envs.cache
-        self._cache_key = (cr, uid)
         self._protected = defaultdict(frozenset)    # {field: ids, ...}
         self.dirty = defaultdict(set)               # {record: set(field_name), ...}
         self.all = envs
@@ -935,12 +924,6 @@ class Environment(Mapping):
         finally:
             self.all.recompute = tmp
 
-    def cache_key(self, field):
-        """ Return the key to store the value of ``field`` in cache, the full
-            cache key being ``(key, field, record.id)``.
-        """
-        return self if field.context_dependent else self._cache_key
-
 
 class Environments(object):
     """ A common object for all environments in a request. """
@@ -963,57 +946,46 @@ class Environments(object):
 class Cache(object):
     """ Implementation of the cache of records. """
     def __init__(self):
-        # {key: {field: {record_id: value}}}
+        # {field: {record_id: {key: value}}}
         self._data = defaultdict(lambda: defaultdict(dict))
 
     def contains(self, record, field):
         """ Return whether ``record`` has a value for ``field``. """
-        key = record.env.cache_key(field)
-        return record.id in self._data[key].get(field, ())
+        key = field.cache_key(record)
+        return key in self._data[field].get(record.id, ())
 
     def get(self, record, field):
         """ Return the value of ``field`` for ``record``. """
-        key = record.env.cache_key(field)
-        value = self._data[key][field][record._ids[0]]
+        key = field.cache_key(record)
+        value = self._data[field][record.id][key]
         return value.get() if isinstance(value, SpecialValue) else value
 
     def set(self, record, field, value):
         """ Set the value of ``field`` for ``record``. """
-        key = record.env.cache_key(field)
-        self._data[key][field][record._ids[0]] = value
-
-    def update(self, records, field, values):
-        """ Set the values of ``field`` for several ``records``. """
-        key = records.env.cache_key(field)
-        self._data[key][field].update(pycompat.izip(records._ids, values))
+        key = field.cache_key(record)
+        self._data[field][record.id][key] = value
 
     def remove(self, record, field):
         """ Remove the value of ``field`` for ``record``. """
-        key = record.env.cache_key(field)
-        del self._data[key][field][record.id]
+        key = field.cache_key(record)
+        del self._data[field][record.id][key]
 
     def contains_value(self, record, field):
         """ Return whether ``record`` has a regular value for ``field``. """
-        key = record.env.cache_key(field)
-        value = self._data[key][field].get(record.id, SpecialValue(None))
+        key = field.cache_key(record)
+        value = self._data[field][record.id].get(key, SpecialValue(None))
         return not isinstance(value, SpecialValue)
 
     def get_value(self, record, field, default=None):
         """ Return the regular value of ``field`` for ``record``. """
-        key = record.env.cache_key(field)
-        value = self._data[key][field].get(record.id, SpecialValue(None))
+        key = field.cache_key(record)
+        value = self._data[field][record.id].get(key, SpecialValue(None))
         return default if isinstance(value, SpecialValue) else value
-
-    def get_special(self, record, field, default=None):
-        """ Return the special value of ``field`` for ``record``. """
-        key = record.env.cache_key(field)
-        value = self._data[key][field].get(record.id)
-        return value.get if isinstance(value, SpecialValue) else default
 
     def set_special(self, record, field, getter):
         """ Set the value of ``field`` for ``record`` to return ``getter()``. """
-        key = record.env.cache_key(field)
-        self._data[key][field][record.id] = SpecialValue(getter)
+        key = field.cache_key(record)
+        self._data[field][record.id][key] = SpecialValue(getter)
 
     def set_failed(self, records, fields, exception):
         """ Mark ``fields`` on ``records`` with the given exception. """
@@ -1026,66 +998,67 @@ class Cache(object):
     def get_fields(self, record):
         """ Return the fields with a value for ``record``. """
         for name, field in record._fields.items():
-            key = record.env.cache_key(field)
-            if name != 'id' and record.id in self._data[key].get(field, ()):
+            key = field.cache_key(record)
+            if name != 'id' and key in self._data[field].get(record.id, ()):
                 yield field
 
     def get_records(self, model, field):
         """ Return the records of ``model`` that have a value for ``field``. """
-        key = model.env.cache_key(field)
-        ids = list(self._data[key][field])
+        key = field.cache_key(model)
+        # optimization: do not field.cache_key(record) for each record in cache
+        ids = [
+            record_id
+            for record_id, field_record_cache in self._data[field].items()
+            if key in field_record_cache
+        ]
         return model.browse(ids)
 
     def get_missing_ids(self, records, field):
         """ Return the ids of ``records`` that have no value for ``field``. """
-        key = records.env.cache_key(field)
-        field_cache = self._data[key][field]
+        key = field.cache_key(records)
+        field_cache = self._data[field]
         for record_id in records._ids:
-            if record_id not in field_cache:
+            if key not in field_cache.get(record_id, ()):
                 yield record_id
 
     def copy(self, records, env):
         """ Copy the cache of ``records`` to ``env``. """
-        src, dst = records.env, env
-        for src_key, dst_key in [(src, dst), (src._cache_key, dst._cache_key)]:
-            if src_key == dst_key:
-                break
-            src_cache = self._data[src_key]
-            dst_cache = self._data[dst_key]
-            for field, src_field_cache in src_cache.items():
-                dst_field_cache = dst_cache[field]
-                for record_id, value in src_field_cache.items():
-                    if not isinstance(value, SpecialValue):
-                        # But not if it's a SpecialValue, which often is an access error
-                        # because the other environment (eg. sudo()) is well expected to have access.
-                        dst_field_cache[record_id] = value
+        src = records
+        dst = records.with_env(env)
+        for field, field_cache in self._data.items():
+            src_key = field.cache_key(src)
+            dst_key = field.cache_key(dst)
+            for record_cache in field_cache.values():
+                if src_key in record_cache and not isinstance(record_cache[src_key], SpecialValue):
+                    # But not if it's a SpecialValue, which often is an access error
+                    # because the other environment (eg. sudo()) is well expected to have access.
+                    record_cache[dst_key] = record_cache[src_key]
 
     def invalidate(self, spec=None):
         """ Invalidate the cache, partially or totally depending on ``spec``. """
         if spec is None:
             self._data.clear()
         elif spec:
+            data = self._data
             for field, ids in spec:
                 if ids is None:
-                    for data in self._data.values():
-                        data.pop(field, None)
+                    data.pop(field, None)
                 else:
-                    for data in self._data.values():
-                        field_cache = data.get(field)
-                        if field_cache:
-                            for id in ids:
-                                field_cache.pop(id, None)
+                    field_cache = data[field]
+                    for id in ids:
+                        field_cache.pop(id, None)
 
     def check(self, env):
         """ Check the consistency of the cache for the given environment. """
         # make a full copy of the cache, and invalidate it
         dump = defaultdict(dict)
-        for key in [env, env._cache_key]:
-            key_cache = self._data[key]
-            for field, field_cache in key_cache.items():
-                for record_id, value in field_cache.items():
-                    if record_id:
-                        dump[field][record_id] = value
+        for field, field_cache in self._data.items():
+            browse = env[field.model_name].browse
+            for record_id, field_record_cache in field_cache.items():
+                if record_id:
+                    key = field.cache_key(browse(record_id))
+                    if key in field_record_cache:
+                        dump[field][record_id] = field_record_cache[key]
 
         self.invalidate()
 

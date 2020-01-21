@@ -278,15 +278,13 @@ class WebRequest(object):
         _request_stack.pop()
 
         if self._cr:
-            try:
-                if exc_type is None and not self._failed:
-                    self._cr.commit()
-                    if self.registry:
-                        self.registry.signal_changes()
-                elif self.registry:
-                    self.registry.reset_changes()
-            finally:
-                self._cr.close()
+            if exc_type is None and not self._failed:
+                self._cr.commit()
+                if self.registry:
+                    self.registry.signal_changes()
+            elif self.registry:
+                self.registry.reset_changes()
+            self._cr.close()
         # just to be sure no one tries to re-use the request
         self.disable_db = True
         self.uid = None
@@ -580,7 +578,6 @@ class JsonRequest(WebRequest):
         super(JsonRequest, self).__init__(*args)
 
         self.jsonp_handler = None
-        self.params = {}
 
         args = self.httprequest.args
         jsonp = args.get('jsonp')

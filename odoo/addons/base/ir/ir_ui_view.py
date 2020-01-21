@@ -127,13 +127,6 @@ def get_view_arch_from_file(filename, xmlid):
         if node.tag in ('template', 'record'):
             if node.tag == 'record':
                 field = node.find('field[@name="arch"]')
-                if field is None:
-                    if node.find('field[@name="view_id"]') is not None:
-                        view_id = node.find('field[@name="view_id"]').attrib.get('ref')
-                        ref_id = '%s%s' % ('.' not in view_id and xmlid.split('.')[0] + '.' or '', view_id)
-                        return get_view_arch_from_file(filename, ref_id)
-                    else:
-                        return None
                 _fix_multiple_roots(field)
                 inner = u''.join([etree.tostring(child, encoding='unicode') for child in field.iterchildren()])
                 return field.text + inner
@@ -379,10 +372,7 @@ actual arch.
 
     def _compute_defaults(self, values):
         if 'inherit_id' in values:
-            # Do not automatically change the mode if the view already has an inherit_id,
-            # and the user change it to another.
-            if not values['inherit_id'] or all(not view.inherit_id for view in self):
-                values.setdefault('mode', 'extension' if values['inherit_id'] else 'primary')
+            values.setdefault('mode', 'extension' if values['inherit_id'] else 'primary')
         return values
 
     @api.model
@@ -743,16 +733,11 @@ actual arch.
         """
         Model = self.env[model]
 
-        field_name = None
-        if node.tag == "field":
-            field_name = node.get("name")
-        elif node.tag == "label":
-            field_name = node.get("for")
-        if field_name and field_name in Model._fields:
-            field = Model._fields[field_name]
+        if node.tag == 'field' and node.get('name') in Model._fields:
+            field = Model._fields[node.get('name')]
             if field.groups and not self.user_has_groups(groups=field.groups):
                 node.getparent().remove(node)
-                fields.pop(field_name, None)
+                fields.pop(node.get('name'), None)
                 # no point processing view-level ``groups`` anymore, return
                 return False
         if node.get('groups'):
@@ -920,12 +905,6 @@ actual arch.
             'datetime',
             'relativedelta',
             'current_date',
-            'abs',
-            'len',
-            'bool',
-            'float',
-            'str',
-            'unicode',
         }
 
     def get_attrs_field_names(self, arch, model, editable):

@@ -3,43 +3,39 @@
 # * base
 # 
 # Translators:
+# Martin Trigaux, 2017
+# Collex100, 2017
+# Sergey Vilizhanin, 2017
+# Denis Trepalin <zekarious@gmail.com>, 2017
+# Viktor Pogrebniak <vp@aifil.ru>, 2017
+# Максим Дронь <dronmax@gmail.com>, 2017
+# Артур Чеботарь <artcha.chebotar@gmail.com>, 2017
+# Alex Puchkov <ap@alteco.co>, 2017
+# Gennady Marchenko <gennadym@gmail.com>, 2017
 # Amaro Vita <vita.amaro@gmail.com>, 2017
+# Max Belyanin <maxbelyanin@gmail.com>, 2017
+# KingOPl Slav <87slava13@gmail.com>, 2017
+# Evgeny <transingularity@gmail.com>, 2017
 # Mekan Bash <tmbashimov@gmail.com>, 2017
 # Danil Bochevkin <danil.borchevkin@gmail.com>, 2017
 # Denis Baranov <baranov@itlibertas.com>, 2017
-# Gennady Marchenko <gennadym@gmail.com>, 2017
-# Andrey Skabelin, 2017
-# KingOPl Slav <87slava13@gmail.com>, 2017
-# OstapYakovenko <Ostap.Yakovenko@gmail.com>, 2017
-# Владимир Куряев <istercul@gmail.com>, 2017
-# Evgeny <transingularity@gmail.com>, 2017
-# Alex Puchkov <ap@alteco.co>, 2017
-# Evgeny Kemerov <sintezz777@gmail.com>, 2017
-# Denis Trepalin <zekarious@gmail.com>, 2017
 # Masha Koc <mariya.kos.ua@gmail.com>, 2017
+# Evgeny Kemerov <sintezz777@gmail.com>, 2017
+# Владимир Куряев <istercul@gmail.com>, 2017
+# Andrey Skabelin, 2017
+# OstapYakovenko <Ostap.Yakovenko@gmail.com>, 2017
+# sergeiruzkiicode <sergei.ruzki@icode.by>, 2017
 # Андрей Ландау <zaebokkunwow@gmail.com>, 2017
-# Максим Дронь <dronmax@gmail.com>, 2017
-# Артур Чеботарь <artcha.chebotar@gmail.com>, 2017
-# Collex100, 2017
-# Sergey Vilizhanin, 2017
-# Max Belyanin <maxbelyanin@gmail.com>, 2017
-# Ꚁemetron <d.v.selitsky@gmail.com>, 2017
-# Андрей Гусев <gaussgss@gmail.com>, 2018
-# Viktor Pogrebniak <vp@aifil.ru>, 2018
+# Андрей Гусев <gaussgss@gmail.com>, 2017
+# Dmitry sky <d.v.selitsky@gmail.com>, 2017
 # Yuriy Ney <k_wizard@mail.ru>, 2018
-# sergeiruzkiicode <sergei.ruzki@icode.by>, 2018
-# Oleg Kuryan <oleg@ventor.tech>, 2019
-# Martin Trigaux, 2019
-# Anishchuk Sergei <anishukserg@l-profit.ru>, 2019
-# Vasiliy Korobatov <korobatov@gmail.com>, 2019
-# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 11.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-03 15:05+0000\n"
-"PO-Revision-Date: 2017-09-20 10:13+0000\n"
-"Last-Translator: Vasiliy Korobatov <korobatov@gmail.com>, 2019\n"
+"POT-Creation-Date: 2018-08-02 09:47+0000\n"
+"PO-Revision-Date: 2018-08-02 09:47+0000\n"
+"Last-Translator: Yuriy Ney <k_wizard@mail.ru>, 2018\n"
 "Language-Team: Russian (https://www.transifex.com/odoo/teams/41243/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -173,73 +169,6 @@ msgid ""
 "11010101 Caja General\n"
 "    "
 msgstr ""
-"\n"
-"\n"
-"Модуль локализации для Доминиканской Республики\n"
-"===========================================\n"
-"\n"
-"Catálogo de Cuentas e Impuestos para República Dominicana, Compatible para\n"
-"**Internacionalización** con **NIIF** y alineado a las normas y regulaciones\n"
-"de la Dirección General de Impuestos Internos (**DGII**).\n"
-"\n"
-"**Este módulo consiste de:**\n"
-"\n"
-"- Catálogo de Cuentas Estándar (alineado a DGII y NIIF)\n"
-"- Catálogo de Impuestos con la mayoría de Impuestos Preconfigurados\n"
-"        - ITBIS para compras y ventas\n"
-"        - Retenciones de ITBIS\n"
-"        - Retenciones de ISR\n"
-"        - Grupos de Impuestos y Retenciones:\n"
-"                - Telecomunicaiones\n"
-"                - Proveedores de Materiales de Construcción\n"
-"                - Personas Físicas Proveedoras de Servicios\n"
-"        - Otros impuestos\n"
-"- Secuencias Preconfiguradas para manejo de todos los NCF\n"
-"        - Facturas con Valor Fiscal (para Ventas)\n"
-"        - Facturas para Consumidores Finales\n"
-"        - Notas de Débito y Crédito\n"
-"        - Registro de Proveedores Informales\n"
-"        - Registro de Ingreso Único\n"
-"        - Registro de Gastos Menores\n"
-"        - Gubernamentales\n"
-"- Posiciones Fiscales para automatización de impuestos y retenciones\n"
-"        - Cambios de Impuestos a Exenciones (Ej. Ventas al Estado)\n"
-"        - Cambios de Impuestos a Retenciones (Ej. Compra Servicios al Exterior)\n"
-"        - Entre otros\n"
-"\n"
-"**Nota:**\n"
-"Esta localización, aunque posee las secuencias para NCF, las mismas no pueden\n"
-"ser utilizadas sin la instalación de módulos de terceros o desarrollo\n"
-"adicional.\n"
-"\n"
-"Estructura de Codificación del Catálogo de Cuentas:\n"
-"===================================================\n"
-"\n"
-"**Un dígito** representa la categoría/tipo de cuenta del del estado financiero.\n"
-"**1** - Activo        **4** - Cuentas de Ingresos y Ganancias\n"
-"**2** - Pasivo        **5** - Costos, Gastos y Pérdidas\n"
-"**3** - Capital       **6** - Cuentas Liquidadoras de Resultados\n"
-"\n"
-"**Dos dígitos** representan los rubros de agrupación:\n"
-"11- Activo Corriente\n"
-"21- Pasivo Corriente\n"
-"31- Capital Contable\n"
-"\n"
-"**Cuatro dígitos** se asignan a las cuentas de mayor: cuentas de primer orden\n"
-"1101- Efectivo y Equivalentes de Efectivo\n"
-"2101- Cuentas y Documentos por pagar\n"
-"3101- Capital Social\n"
-"\n"
-"**Seis dígitos** se asignan a las sub-cuentas: cuentas de segundo orden\n"
-"110101 - Caja\n"
-"210101 - Proveedores locales\n"
-"\n"
-"**Ocho dígitos** son para las cuentas de tercer orden (las visualizadas\n"
-"en Odoo):\n"
-"1101- Efectivo y Equivalentes\n"
-"110101- Caja\n"
-"11010101 Caja General\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_jp
@@ -576,35 +505,12 @@ msgstr ""
 "        Бухгалтерская отчетность для Уругвая\n"
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_uk_reports_hmrc
-msgid ""
-"\n"
-"        Accounting reports send to HMRC\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_account_extension
 msgid ""
 "\n"
 "        Adapt base accounting module for Enterprise Edition.\n"
 "\n"
 "        This module will be auto installed if account module and enterprise edition are present\n"
-"    "
-msgstr ""
-"\n"
-"        Адаптация базового модуля учета для Enterprise Edition.\n"
-"\n"
-"        Данный модуль будет автоматически установлен при наличии модуля учетна и корпоративной версии\n"
-"    "
-
-#. module: base
-#: model:ir.module.module,summary:base.module_l10n_mx_reports_closing
-msgid ""
-"\n"
-"        Allow to generate the trial balance for the closing entry.\n"
-"\n"
-"        Colloquially known as \"Month 13\"\n"
 "    "
 msgstr ""
 
@@ -660,9 +566,6 @@ msgid ""
 "        Compute sales tax automatically using TaxCloud based on customer address in United States.\n"
 "    "
 msgstr ""
-"\n"
-"        Налог с продаж рассчитывается автоматически с использованием TaxCloud на основании адреса клиента в США.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_mx_reports
@@ -691,9 +594,6 @@ msgid ""
 "        Enable the SEPA features in the payments of expenses\n"
 "    "
 msgstr ""
-"\n"
-"        Включите функции SEPA при оплате расходов\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_mx_edi_customs
@@ -714,12 +614,6 @@ msgid ""
 "        For more informations about the SEPA standards : http://www.iso20022.org/ and http://www.europeanpaymentscouncil.eu/\n"
 "    "
 msgstr ""
-"\n"
-"        Генерировать платежные поручения в соответствии с рекомендациями стандарта SEPA, благодаря сообщениям pain.001. Поддерживаются следующие болевые варианты (страны): pain.001.001.03 (общий), pain.001.001.03.ch.02 (Швейцария) и pain.001.003.03 (Германия). Сгенерированный XML файл может быть загружен в ваш банк.\n"
-"\n"
-"        Настоящий модуль составлен в соответствии с инструкциями Европейского платежного совета по внедрению.\n"
-"        Для получения более подробной информации о стандартах SEPA : http://www.iso20022.org/ and http://www.europeanpaymentscouncil.eu/\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_voip
@@ -894,10 +788,6 @@ msgid ""
 "        linked to an SO, or only the validated timesheets\n"
 "    "
 msgstr ""
-"\n"
-"        При составлении табелей учета рабочего времени позволяет выставлять счета либо по всем табелям учета рабочего времени,\n"
-"        привязанным к Заказам продаж, либо только по утвержденным табелям учета рабочего времени.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_multilang
@@ -923,8 +813,6 @@ msgid ""
 "\n"
 "    Adds workcenters to Quality Control\n"
 msgstr ""
-"\n"
-"    Добавляет рабочие центры к системе контроля качества\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_documentation_examples
@@ -970,13 +858,6 @@ msgid ""
 "    * The new lock date for advisors must be set after the previous lock date.\n"
 "    "
 msgstr ""
-"\n"
-"    Сделать дату блокировки необратимой:\n"
-"\n"
-"    * Вы не можете определить более строгие условия на консультантов, чем на пользователей. Затем дата блокировки на консультанте должна быть установлена перед датой блокировки для пользователей.\n"
-"    * Вы не можете заблокировать период, который еще не завершен. Затем, дата блокировки для консультантов должна быть установлена до последнего дня предыдущего месяца.\n"
-"    * Новая дата блокировки для консультантов должна быть установлена после предыдущей даты блокировки.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_timesheet_attendance
@@ -1005,24 +886,12 @@ msgstr ""
 "    "
 
 #. module: base
-#: model:ir.module.module,summary:base.module_l10n_mx_tax_cash_basis
-msgid ""
-"\n"
-"    Properly create the Journal Entries on Tax Cash basis when using foreign\n"
-"    currencies the Tax must be set at date of payment\n"
-"    "
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_project_forecast
 msgid ""
 "\n"
 "    Resource management for Project\n"
 "    "
 msgstr ""
-"\n"
-"    Управление ресурсами для проекта\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_ebay
@@ -1423,17 +1292,6 @@ msgstr ""
 "    "
 
 #. module: base
-#: model:ir.module.module,description:base.module_l10n_be_intrastat_2019
-msgid ""
-"\n"
-"Adds the possibility to specify the origin country of goods and the partner VAT in the Intrastat XML report.\n"
-"    "
-msgstr ""
-"\n"
-"Добавляет возможность указания страны происхождения товара и партнерского НДС в отчет Intrastat XML.\n"
-"    "
-
-#. module: base
 #: model:ir.module.module,description:base.module_website_calendar
 msgid ""
 "\n"
@@ -1564,11 +1422,6 @@ msgid ""
 "\n"
 "* Cost structure report\n"
 msgstr ""
-"\n"
-"Аналитический учет в MRP\n"
-"==========================\n"
-"\n"
-"* Отчет о структуре расходов\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_ar
@@ -1686,12 +1539,6 @@ msgid ""
 "GST Reporting for Australian Accounting.\n"
 "    "
 msgstr ""
-"\n"
-"Австралийские бухгалтерские отчеты\n"
-"=============================\n"
-"\n"
-"GST Отчетность по австралийскому бухгалтерскому учету.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_vat_autocomplete
@@ -1862,13 +1709,6 @@ msgid ""
 "When you proceed with the reconciliation, simply select the corresponding batch deposit to reconcile the payments.\n"
 "    "
 msgstr ""
-"\n"
-"Пакетное внесение\n"
-"=============\n"
-"Пакетные депозиты позволяют группировать полученные чеки до их депонирования в банк.\n"
-"Сумма, внесенная в банк, будет отображаться в выписке с банковского счета как единичная транзакция.\n"
-"Когда вы приступите к сверке, просто выберите соответствующий пакетный депозит для сверки платежей.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_hr_payroll
@@ -1905,8 +1745,7 @@ msgid ""
 "Legal\n"
 "-----\n"
 "**The use of pos_blackbox_be sources is only certified on odoo.com SaaS platform\n"
-"for version 11.0.** Contact Odoo SA before installing pos_blackbox_be module.\n"
-"\n"
+"for version 9.0.**\n"
 "An obfuscated and certified version of the pos_blackbox_be may be provided on\n"
 "requests for on-premise installations.\n"
 "No modified version is certified and supported by Odoo SA.\n"
@@ -2280,9 +2119,6 @@ msgid ""
 "Design gorgeous mails\n"
 "    "
 msgstr ""
-"\n"
-"Дизайн великолепных писем\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_de
@@ -2359,16 +2195,6 @@ msgid ""
 "Allow the user to generate the EDI document for Mexican invoicing.\n"
 "\n"
 "This module allows the creation of the EDI documents and the communication with the Mexican certification providers (PACs) to sign/cancel them.\n"
-"    "
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_edi_payment_bank
-msgid ""
-"\n"
-"EDI Mexican Localization\n"
-"========================\n"
-"Allow the user to select the bank account that was used the customer to paid the invoices.\n"
 "    "
 msgstr ""
 
@@ -2727,14 +2553,6 @@ msgid ""
 "**Configure your API keys from General Setting**\n"
 "    "
 msgstr ""
-"\n"
-"Интеграция с Google Firebase Messaging\n"
-"=====================================\n"
-"Этот модуль позволяет отправлять push-уведомления FCM на зарегистрированные мобильные телефоны\n"
-"для каждого сообщения в чате..\n"
-"\n"
-"**Настройте ключи API из общих настроек**\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_hw_proxy
@@ -2781,24 +2599,6 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-"\n"
-"Служба поддержки - Приложение для управления тикетами\n"
-"================================\n"
-"\n"
-"Особенности:\n"
-"\n"
-"    - Обработка заявок на различных этапах для их решения.\n"
-"    - Добавление приоритетов, типов, описаний и тегов для определения ваших билетов.\n"
-"    - Использование разговора для передачи дополнительной информации и опроса сотрудников по билетам.\n"
-"    - Наслаждайтесь использованием адаптированной приборной панели и удобным видом на кабан для обработки Ваших билетов.\n"
-"    - Проведите углубленный анализ ваших билетов с помощью поворотного окна в меню отчетов.\n"
-"    - Создание команды и определение ее членов, использование автоматического метода назначения, если хотите.\n"
-"    - Использование почтового псевдонима для автоматического создания билетов и общения с клиентами.\n"
-"    - Автоматическое добавление крайних сроков действия Соглашения об уровне обслуживания к вашим билетам.\n"
-"    - Получение отзывы клиентов, с помощью рейтингов.\n"
-"    - Установка дополнительных функций с помощью командного вида.\n"
-"\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_import_module
@@ -2834,20 +2634,6 @@ msgid ""
 "\n"
 "    "
 msgstr ""
-"\n"
-"Включая следующие данные в Стандарты бухгалтерского учета для коммерческих предприятий\n"
-"包含企业会计准则以下数据\n"
-"\n"
-"* План счетов\n"
-"* 科目表模板\n"
-"\n"
-"* Шаблоны счетов\n"
-"* 科目模板\n"
-"\n"
-"* Шаблоны налогов\n"
-"* 税金模板\n"
-"\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in
@@ -2894,18 +2680,6 @@ msgid ""
 "Sheet, now only Vertical format has been permitted Which is Supported By OpenERP.\n"
 "  "
 msgstr ""
-"\n"
-"Индийская бухгалтерия: План счета.\n"
-"====================================\n"
-"\n"
-"Индийская бухгалтерская карта и локализация.\n"
-"\n"
-"Таблица VI плана счетов для индийского бухгалтерского учета.\n"
-"\n"
-"Примечание: Таблица VI была пересмотрена MCA и применима ко всему Балансовому отчету, составленному после\n"
-"31 марта 2011 года. Формат отменил два предыдущих варианта форматирования Баланса\n"
-", теперь разрешен только вертикальный формат, который поддерживается OpenERP.\n"
-"  "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_in_hr_payroll
@@ -3059,14 +2833,6 @@ msgid ""
 "* Equipments related to workcenters\n"
 "* MTBF, MTTR, ...\n"
 msgstr ""
-"\n"
-"Техническое обслуживание в MRP\n"
-"==================\n"
-"* Профилактическое и корректирующее техобслуживание\n"
-"* Определение различных этапов для запросов на техническое обслуживание\n"
-"* Запросы на техническое обслуживание (также повторяющиеся в профилактических целях)\n"
-"* Оборудование, связанное с рабочими центрами\n"
-"* Средняя наработка на отказ, Среднее время до восстановления работоспособности, ...\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_3way_match
@@ -3397,21 +3163,6 @@ msgid ""
 "of recall defined. You can define different policies for different companies. \n"
 "\n"
 msgstr ""
-"\n"
-"Модуль для автоматизации писем по неоплаченным счетам с многоуровневым вызовом.\n"
-"=========================================================================\n"
-"\n"
-"Вы можете определить несколько уровней вызова через меню:\n"
-"---------------------------------------------------------------\n"
-"    Настройка / Отслеживание / Последующие уровни\n"
-"    \n"
-"После того, как он определен, вы можете автоматически распечатывать вызовы каждый день, просто щелкнув по меню:\n"
-"------------------------------------------------------------------------------------------------------\n"
-"    Слежение за платежами / Отправка электронной почты и писем\n"
-"\n"
-"Он будет генерировать PDF / отправить электронную почту / набор ручных действий в соответствии с различными уровнями \n"
-"определённого вызова. Вы можете определить различные политики для разных компаний. \n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_bank_statement_import_camt
@@ -3423,12 +3174,6 @@ msgid ""
 "Improve the import of bank statement feature to support the SEPA recommanded Cash Management format (CAMT.053).\n"
 "    "
 msgstr ""
-"\n"
-"Модуль для импорта CAMT выписок банковских счетов.\n"
-"======================================\n"
-"\n"
-"Усовершенствуйте функцию импорта банковских выписок для поддержки рекомендованного SEPA формата управления денежными средствами (CAMT.053).\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_be_coda
@@ -3480,52 +3225,6 @@ msgid ""
 "V2.2 specifications.\n"
 "If required, you can manually adjust the descriptions via the CODA configuration menu.\n"
 msgstr ""
-"\n"
-"Модуль для импорта CODA выписок банковских счетов.\n"
-"======================================\n"
-"\n"
-"Поддерживаются обычные файлы CODA в формате V2 с банковских счетов Бельгии.\n"
-"----------------------------------------------------------------------\n"
-"    * Поддержка CODA v1.\n"
-"    * Поддержка CODA v2.2.\n"
-"    * Поддержка в иностранной валюте.\n"
-"    * Поддержка всех типов записей данных (0, 1, 2, 3, 4, 8, 9).\n"
-"    * Обработка и регистрация всех кодов транзакций и структурированного формата\n"
-"      связи.\n"
-"    * Автоматическое назначение финансового журнала через параметры конфигурации CODA.\n"
-"    * Поддержка нескольких журналов на номер банковского счета.\n"
-"    * Поддержка нескольких выписок с разных банковских счетов в одном\n"
-"      CODA файле.\n"
-"    * Поддержка для 'только обработка' банковских счетов CODA (определяется как type='info' в\n"
-"      записях конфигурации банковского счета CODA).\n"
-"    * Многоязычный анализ CODA, разбор конфигурационных данных для EN,\n"
-"      NL, FR.\n"
-"\n"
-"Машинно-считываемые файлы CODA анализируются и хранятся в удобочитаемом для человека формате в\n"
-"выписке из банка CODA. Также генерируются выписки банка, содержащие подмножество\n"
-"информация CODA (только те строки транзакции, которые требуются для\n"
-"создание финансовой отчетности). Выписка банка CODA является\n"
-"«только для чтения», следовательно, остается надежным представлением оригинала\n"
-"файла CODA, в то время как банковская выписка будет изменена в соответствии с требованиями бухгалтерского учета\n"
-"бизнес процесса.\n"
-"\n"
-"Счета в банке CODA, настроенные как тип «Информация», будут генерировать только выписки из банка CODA.\n"
-"\n"
-"Удаление одного объекта в обработке CODA приводит к удалению\n"
-"связанных объектов. Удаление файла CODA, содержащего несколько банкских\n"
-"выписок  также удалит эти связанные выписки.\n"
-"\n"
-"Вместо ручной настройки сгенерированных банковских выписок вы также можете\n"
-"повторно импортировать CODA после обновления базы данных OpenERP информацией, которая\n"
-"отсутствовала, чтобы позволить автоматическое согласование.\n"
-"\n"
-"Замечание по поддержке CODA V1:\n"
-"~~~~~~~~~~~~~~~~~~~~~~~~~~\n"
-"В некоторых случаях код транзакции, тип транзакции или структурированный\n"
-"код связи получил новое или более четкое описание в CODA V2.\n"
-"описание, предоставленное таблицами конфигурации CODA, основано на CODA\n"
-"cпецификации V2.2.\n"
-"При необходимости вы можете вручную настроить описания в меню конфигурации CODA.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_bank_statement_import_csv
@@ -3542,17 +3241,6 @@ msgid ""
 "Because of the CSV format limitation, we cannot ensure the same transactions aren't imported several times or handle multicurrency.\n"
 "Whenever possible, you should use a more appropriate file format like OFX.\n"
 msgstr ""
-"\n"
-"Модуль для импорта банковских выписок CSV.\n"
-"======================================\n"
-"\n"
-"Этот модуль позволяет импортировать файлы CSV в Odoo: они анализируются и хранятся в удобочитаемом формате в\n"
-"Бухгалтерский учет \\ Банки и Наличные \\ Банковские выписки.\n"
-"\n"
-"Важное замечание\n"
-"---------------------------------------------\n"
-"Из-за ограничения формата CSV мы не можем гарантировать, что одни и те же транзакции не импортируются несколько раз или не обрабатывают мультивалютность.\n"
-"По возможности, вы должны использовать более подходящий формат файла, такой как OFX.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_bank_statement_import_ofx
@@ -3568,16 +3256,6 @@ msgid ""
 "creation of the Financial Accounting records).\n"
 "    "
 msgstr ""
-"\n"
-"Модуль для импорта банковских выписок OFX.\n"
-"======================================\n"
-"\n"
-"Этот модуль позволяет импортировать машиночитаемые файлы OFX в Odoo: они анализируются и хранятся в удобочитаемом формате в\n"
-"Бухгалтерский учет \\ Банки и Наличные \\ Банковские выписки.\n"
-"\n"
-"Можно генерировать банковские выписки, содержащие подмножество информации OFX (только те строки транзакций, которые требуются для\n"
-"создания финансовой отчетности).\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_account_bank_statement_import_qif
@@ -3594,17 +3272,6 @@ msgid ""
 "Because of the QIF format limitation, we cannot ensure the same transactions aren't imported several times or handle multicurrency.\n"
 "Whenever possible, you should use a more appropriate file format like OFX.\n"
 msgstr ""
-"\n"
-"Модуль для импорта банковских выписок QIF.\n"
-"======================================\n"
-"\n"
-"Этот модуль позволяет импортировать машиночитаемые файлы QIF в Odoo: они анализируются и хранятся в удобочитаемом формате в\n"
-"Бухгалтерский учет \\ Банки и Наличные \\ Банковские выписки.\n"
-"\n"
-"Важное замечание\n"
-"---------------------------------------------\n"
-"Из-за ограничения формата QIF мы не можем гарантировать, что одни и те же транзакции не импортируются несколько раз и не обрабатывают мультивалютность.\n"
-"По возможности, вы должны использовать более подходящий формат файла, такой как OFX.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_voip_onsip
@@ -3621,9 +3288,6 @@ msgid ""
 "Move the cash basis lines to another account.\n"
 "    "
 msgstr ""
-"\n"
-"Переместить строки кассовой основы на другой счет.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_nz
@@ -3747,12 +3411,6 @@ msgid ""
 "This module modifies the web addon to provide Enterprise design and responsiveness.\n"
 "        "
 msgstr ""
-"\n"
-"Веб-клиент Odoo Enterprise.\n"
-"===========================\n"
-"\n"
-"Этот модуль модифицирует веб-аддон для обеспечения корпоративного дизайна и отзывчивости.\n"
-"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_form_editor
@@ -3764,12 +3422,6 @@ msgid ""
 "Allows you to build web forms on the website using the website builder.\n"
 "        "
 msgstr ""
-"\n"
-"Редактор форм Odoo\n"
-"====================\n"
-"\n"
-"Позволяет создавать веб-формы на сайте с помощью конструктора сайтов.\n"
-"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_mail_channel
@@ -4000,9 +3652,6 @@ msgid ""
 "Override community website features\n"
 "    "
 msgstr ""
-"\n"
-"\n"
-"Override community website features    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_pa
@@ -4152,13 +3801,6 @@ msgid ""
 "* Different approval flows possible depending on the type of change order\n"
 "\n"
 msgstr ""
-"\n"
-"Управление жизненным циклом продукта\n"
-"=======================\n"
-"\n"
-"* Версия спецификации материалов и маршрутизации\n"
-"* Возможны разные потоки утверждений в зависимости от типа заказа на изменение\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_product_extended
@@ -4226,16 +3868,6 @@ msgid ""
 "* Define your stages for the quality alerts\n"
 "\n"
 msgstr ""
-"\n"
-"Контроль качества\n"
-"===============\n"
-"\n"
-"* Определить баллы качества, которые будут генерировать проверки качества на комплектации,\n"
-"  производственных заказах или рабочих заказах (quality_mrp)\n"
-"* Оповещения о качестве могут быть созданы независимо или связаны с проверками качества\n"
-"* Возможность добавить меру к проверке качества с минимальным / максимальным допуском\n"
-"* Определите свои этапы для оповещений о качестве\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_expense
@@ -4332,13 +3964,6 @@ msgid ""
 "installed screen. This module then displays this HTML using a web\n"
 "browser.\n"
 msgstr ""
-"\n"
-"Драйвер экрана\n"
-"=============\n"
-"\n"
-"Этот модуль позволяет клиенту POS удаленно отправлять визуализированный HTML-код\n"
-"на установленный экран. Этот модуль затем отображает этот HTML с помощью веб-\n"
-"браузера.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_digital
@@ -4426,11 +4051,6 @@ msgid ""
 "Let your customers follow the signature process easily.\n"
 "    "
 msgstr ""
-"\n"
-"Подпишите и заполните ваши документы легко. Настройте свои документы с полями текста и подписи и отправьте их своим получателям.\n"
-"\n"
-"Пусть ваши клиенты легко следят за процессом подписи.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_sg
@@ -4503,17 +4123,6 @@ msgid ""
 "\n"
 "Note: Only the admin user is allowed to make those customizations.\n"
 msgstr ""
-"\n"
-"Studio - настройка Odoo\n"
-"=======================\n"
-"\n"
-"Это дополнение позволяет пользователю настраивать большинство элементов пользовательского интерфейса в\n"
-"простом и графическом способе. Он имеет две основные функции:\n"
-"\n"
-"* создать новое приложение (добавить модуль, пункт меню верхнего уровня и действие по умолчанию)\n"
-"*  настроить существующее приложение (редактировать меню, действия, представления, переводы, ...)\n"
-"\n"
-"Примечание. Только пользователь с правами администратора может выполнять эти настройки.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_studio
@@ -4583,11 +4192,6 @@ msgid ""
 "\n"
 "Yodlee interface.\n"
 msgstr ""
-"\n"
-"Синхронизируйте ваши банковские каналы с Yodlee\n"
-"================================\n"
-"\n"
-"Yodlee интерфейс.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_project_timesheet_synchro
@@ -4755,21 +4359,6 @@ msgid ""
 "\n"
 "    Access to download the mandatory Certificate of Conformity delivered by Odoo SA (only for Odoo Enterprise users)\n"
 msgstr ""
-"\n"
-"Это дополнение соответствует техническим требованиям французского регламента CGI. 286, I. 3° bis, который устанавливает определенные критерии, касающиеся неизменности, безопасности, хранения и архивирования данных, связанных с продажей частным лицам  (B2C).\n"
-"-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n"
-"\n"
-"Установите его, если вы используете приложение \"Точка продаж\" для продажи физическим лицам.\n"
-"\n"
-"Модуль добавляет следующие возможности:\n"
-"\n"
-"    Неизменность: деактивация всех способов отмены или изменения ключевых данных POS-заказов, счетов-фактур и записей в журнале.\n"
-"\n"
-"     Безопасность: алгоритм цепочки для проверки неизменяемости\n"
-"\n"
-"    Хранение: автоматическое завершение продаж с расчетом как за период, так и суммарно (ежедневно, ежемесячно, ежегодно)\n"
-"\n"
-"    Доступ для загрузки обязательного сертификата соответствия, предоставляемого компанией Odoo SA (только для пользователей Odoo Enterprise)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_fr_certification
@@ -4788,19 +4377,6 @@ msgid ""
 "\n"
 "    Access to download the mandatory Certificate of Conformity delivered by Odoo SA (only for Odoo Enterprise users)\n"
 msgstr ""
-"\n"
-"Это дополнение вводит технические требования французского правила CGI, статья 286, I. 3° bis, которое устанавливает определенные критерии, касающиеся неизменяемости, безопасности, хранения и архивирования данных, связанных с продажей частным лицам (B2C).\n"
-"-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n"
-"\n"
-"Модуль добавляет следующие возможности:\n"
-"\n"
-"    Неизменность: отключение всех способов отмены или изменения ключевых данных, счетов-фактур и записей в журнале\n"
-"\n"
-"    Безопасность: алгоритм цепочки для проверки неизменяемости\n"
-"\n"
-"    Хранение: автоматическое завершение продаж с расчетом как за период, так и суммарно (ежедневно, ежемесячно, ежегодно)\n"
-"\n"
-"    Доступ для загрузки обязательного сертификата соответствия, предоставляемого компанией Odoo SA (только для пользователей Odoo Enterprise)\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_pos_cache
@@ -5299,16 +4875,6 @@ msgid ""
 "    - General Solutions.\n"
 "    - Trobz\n"
 msgstr ""
-"\n"
-"Это модуль для управления бухгалтерской отчетностью Вьетнама в Odoo.\n"
-"=========================================================================\n"
-"\n"
-"Данный модуль применим к компаниям, работающим на базе Вьетнамского стандарта бухгалтерского учета (VAS)\n"
-"с Планом счетов в соответствии с Циркуляром No. 200/2014/TT-BTC\n"
-"\n"
-"**Credits:**\n"
-"    - General Solutions.\n"
-"    - Trobz\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_vn_reports
@@ -5321,13 +4887,6 @@ msgid ""
 "\n"
 "**Credits:** General Solutions.\n"
 msgstr ""
-"\n"
-"Это модуль для управления бухгалтерскими отчетнами Вьетнама в Odoo.\n"
-"=========================================================================\n"
-"\n"
-"Данный модуль применим к компаниям, работающим на базе Вьетнамского стандарта бухгалтерского учета (VAS).\n"
-"\n"
-"**Credits:** General Solutions.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_rating_project
@@ -5393,14 +4952,6 @@ msgid ""
 "    Storage: automatic sales closings with computation of both period and cumulative totals (daily, monthly, annually)\n"
 "\n"
 msgstr ""
-"\n"
-"Этот модуль добавляет поддержку автоматического закрытия продаж с расчетом как периодов, так и кумулятивных итогов (ежедневно, ежемесячно, ежегодно)\n"
-"-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n"
-"\n"
-"Модуль добавляет следующие возможности:\n"
-"\n"
-"    Хранение: автоматическое завершение продаж с расчетом как за период, так и суммарно (ежедневно, ежемесячно, ежегодно)\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_event_barcode
@@ -5411,11 +4962,6 @@ msgid ""
 "the registration is confirmed.\n"
 "    "
 msgstr ""
-"\n"
-"Этот модуль добавляет поддержку сканирования штрихкодов в систему управления событиями.\n"
-"Штрих-код генерируется для каждого участника и печатается на бейдже. При сканировании,\n"
-"регистрация подтверждается.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_margin
@@ -5560,17 +5106,6 @@ msgid ""
 "- Check on bottom: ADP standard\n"
 "    "
 msgstr ""
-"\n"
-"Данный модуль позволяет распечатывать платежи на предварительно распечатанной чековой бумаге.\n"
-"В настройках компании можно настроить выходные данные (макет, информацию о заглушках и т.д.) и управлять\n"
-"проверкой нумерации (если вы используете предварительно распечатанные чеки без цифр) в настройках журнала.\n"
-"\n"
-"Поддерживаемые форматы\n"
-"-----------------\n"
-"- Проверьте сверху : Quicken / QuickBooks стандарт\n"
-"- Проверь посередине: стандарт Peachtree\n"
-"- Проверь снизу: стандарт ADP\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_anonymization
@@ -5699,10 +5234,6 @@ msgid ""
 "======================================================================================\n"
 "    "
 msgstr ""
-"\n"
-"Этот модуль позволяет отправлять документы по почте, благодаря Docsaway.\n"
-"======================================================================================\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_subscription_asset
@@ -5897,13 +5428,6 @@ msgid ""
 "from purchase order.\n"
 "    "
 msgstr ""
-"\n"
-"Данный модуль предоставляет пользователю возможность установки модулей mrp и закупок одновременно.\n"
-"========================================================================================\n"
-"\n"
-"В основном он используется, когда мы хотим отслеживать заказы на производство, созданные\n"
-"из заказа на закупку.\n"
-"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_sale_mrp
@@ -6386,14 +5910,6 @@ msgid ""
 msgstr ""
 
 #. module: base
-#: code:addons/model.py:148
-#, python-format
-msgid ""
-" another model requires the record being deleted. If possible, archive it "
-"instead."
-msgstr ""
-
-#. module: base
 #: model:ir.ui.view,arch_db:base.res_lang_form
 msgid "%A - Full weekday name."
 msgstr "%A - Полное название дня недели."
@@ -6532,14 +6048,6 @@ msgstr ", только для чтения"
 #: model:ir.ui.view,arch_db:base.report_irmodulereference
 msgid ", required"
 msgstr ", требуется"
-
-#. module: base
-#: code:addons/model.py:136
-#, python-format
-msgid ""
-"- Create/update: a mandatory field is not set.\n"
-"- Delete: another model requires the record being deleted. If possible, archive it instead."
-msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.report_irmodeloverview
@@ -7213,19 +6721,9 @@ msgid "A module to test the API."
 msgstr "Модуль для тестирования API."
 
 #. module: base
-#: model:ir.module.module,description:base.module_test_rpc
-msgid "A module to test the RPC requests."
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_test_uninstall
 msgid "A module to test the uninstall feature."
 msgstr "Модуль для проверки неустановленных компонентов."
-
-#. module: base
-#: model:ir.module.module,description:base.module_test_translation_import
-msgid "A module to test translation import."
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_test_assetsbundle
@@ -7381,7 +6879,7 @@ msgstr "Токен доступа"
 #. module: base
 #: model:res.groups,name:base.group_private_addresses
 msgid "Access to Private Addresses"
-msgstr "Доступ к частным адресам"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_analytic_default
@@ -7426,17 +6924,17 @@ msgstr "Номер счета должен быть уникальным"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_taxcloud
 msgid "Account TaxCloud"
-msgstr "Учет TaxCloud"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_account_taxcloud
 msgid "Account TaxCloud - Ecommerce"
-msgstr "Учет TaxCloud - Ecommerce"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_account_taxcloud
 msgid "Account TaxCloud - Sale"
-msgstr "Учет TaxCloud - Sale"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_payment
@@ -7638,16 +7136,9 @@ msgid "Add Delivery Costs to Online Sales"
 msgstr "Добавить стоимость доставки к онлайн продажам"
 
 #. module: base
-#: selection:ir.actions.server,state:0
-msgid "Add Followers"
-msgstr "Добавить подписчиков"
-
-#. module: base
 #: model:ir.module.module,summary:base.module_account_cash_basis_base_account
 msgid "Add a custom account to handle base amount lines"
 msgstr ""
-"Добавить пользовательской учетной записи для работы со строками базовой "
-"суммы"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_transifex
@@ -8363,11 +7854,6 @@ msgid "Automate Marketing Campaigns"
 msgstr "Автоматизируйте Маркетинговые кампании"
 
 #. module: base
-#: selection:ir.actions.server,usage:0
-msgid "Automated Action"
-msgstr "Автоматизированное действие"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_base_automation
 msgid "Automated Action Rules"
 msgstr "Автоматические правила действий"
@@ -8533,16 +8019,6 @@ msgid "Bank account"
 msgstr "Банковский счёт"
 
 #. module: base
-#: model:ir.module.module,summary:base.module_l10n_mx_edi_payment_bank
-msgid "Bank account in the payments"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_payment_bank
-msgid "Bank account payment to Mexico"
-msgstr ""
-
-#. module: base
 #: model:ir.model.fields,help:base.field_res_partner_bank_acc_type
 msgid "Bank account type, inferred from account number"
 msgstr "Тип банковского счета, выведенный из номера счета"
@@ -8661,7 +8137,7 @@ msgstr "Base: немедленная установка модулей"
 #. module: base
 #: model:ir.module.module,summary:base.module_web_grid
 msgid "Basic 2D Grid view for odoo"
-msgstr "Базовый 2D-просмотр сетки для odoo"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_iap
@@ -8701,14 +8177,9 @@ msgid "Belgian Intrastat Declaration"
 msgstr "Бельгийская Интрастатская декларация"
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_be_intrastat_2019
-msgid "Belgian Intrastat Declaration - Complement for 2019"
-msgstr "Бельгийская Интрастатская декларация - Дополнение для 2019"
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_blackbox_be
 msgid "Belgian Registered Cash Register"
-msgstr "Бельгийский зарегистрированный кассовый аппарат"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.be
@@ -8723,7 +8194,7 @@ msgstr "Бельгия - отчеты"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_reports
 msgid "Belgium - Accounting Reports"
-msgstr "Бельгия - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_be_coda
@@ -8773,7 +8244,7 @@ msgstr "Бутан"
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_plm
 msgid "Bill of Materials, Routings, Versions, Engineering Change Orders"
-msgstr "Спецификация, Маршруты, Версии, Заказы на инженерные изменения"
+msgstr ""
 
 #. module: base
 #: selection:ir.property,type:0
@@ -8828,7 +8299,7 @@ msgstr "Боливия - Бухгалтерский учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_bo_reports
 msgid "Bolivia - Accounting Reports"
-msgstr "Боливия - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.bq
@@ -8883,7 +8354,7 @@ msgstr "Бразилия - учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_br_reports
 msgid "Brazilian - Accounting Reports"
-msgstr "Бразилия - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_payment
@@ -8894,7 +8365,7 @@ msgstr "Модуль моста между покупателем и веб-са
 #: model:ir.module.module,description:base.module_website_helpdesk
 #: model:ir.module.module,summary:base.module_website_helpdesk
 msgid "Bridge module for helpdesk modules using the website."
-msgstr "Модуль моста для модулей службы поддержки с использованием веб-сайта."
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.io
@@ -9482,7 +8953,7 @@ msgstr "Колумбийский учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_co_reports
 msgid "Colombian - Accounting Reports"
-msgstr "Колумбия - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_co
@@ -9546,12 +9017,6 @@ msgstr "Комментарии"
 #: model:ir.model.fields,field_description:base.field_res_users_commercial_partner_id
 msgid "Commercial Entity"
 msgstr "Коммерческая организация"
-
-#. module: base
-#: model:ir.model.fields,field_description:base.field_res_partner_commercial_partner_country_id
-#: model:ir.model.fields,field_description:base.field_res_users_commercial_partner_country_id
-msgid "Commercial Entity's Country"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_data_drinks
@@ -9684,7 +9149,7 @@ msgstr "Вычислить"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_taxcloud_delivery
 msgid "Compute taxes with TaxCloud after online delivery computation."
-msgstr "Рассчет налогов с TaxCloud после онлайн расчета доставки."
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_model_form
@@ -9795,12 +9260,6 @@ msgstr "Ограничение"
 #: model:ir.model.fields,field_description:base.field_ir_model_constraint_type
 msgid "Constraint Type"
 msgstr "Тип ограничения"
-
-#. module: base
-#: code:addons/model.py:153
-#, python-format
-msgid "Constraint:"
-msgstr ""
 
 #. module: base
 #: sql_constraint:ir.model.constraint:0
@@ -9955,7 +9414,9 @@ msgstr "Страны"
 #: model:ir.model.fields,field_description:base.field_res_bank_country
 #: model:ir.model.fields,field_description:base.field_res_company_country_id
 #: model:ir.model.fields,field_description:base.field_res_country_state_country_id
+#: model:ir.model.fields,field_description:base.field_res_partner_commercial_partner_country_id
 #: model:ir.model.fields,field_description:base.field_res_partner_country_id
+#: model:ir.model.fields,field_description:base.field_res_users_commercial_partner_country_id
 #: model:ir.model.fields,field_description:base.field_res_users_country_id
 #: model:ir.ui.view,arch_db:base.res_partner_view_form_private
 #: model:ir.ui.view,arch_db:base.view_company_form
@@ -10500,8 +9961,8 @@ msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr ""
+msgid "DHL Shipping"
+msgstr "Доставка DHL"
 
 #. module: base
 #: selection:report.paperformat,format:0
@@ -10757,11 +10218,6 @@ msgstr ""
 #: model:ir.module.category,name:base.module_category_hidden_dependency
 msgid "Dependency"
 msgstr "Зависимость"
-
-#. module: base
-#: model:ir.module.module,description:base.module_test_pylint
-msgid "Deprecated empty module in favor of test-lint."
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment_description
@@ -11065,12 +10521,6 @@ msgid "Document model"
 msgstr "Модель документа"
 
 #. module: base
-#: code:addons/models.py:2888
-#, python-format
-msgid "Document type:"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_website_forum_doc
 msgid "Documentation"
 msgstr "Документация"
@@ -11140,174 +10590,6 @@ msgstr "Срок действия не может быть отрицатель�
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_E
 msgid "E WATER SUPPLY;SEWERAGE,WASTE MANAGEMENT AND REMEDIATION ACTIVITIES"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_edi_cancellation
-msgid ""
-"EDI Cancellation\n"
-"================\n"
-"\n"
-"This module adds the next features in the cancel process:\n"
-"\n"
-"1. Button to request cancellation in the SAT was added.\n"
-"2. The cancel process in Odoo, only could be executed when the SAT status\n"
-"   is cancelled.\n"
-"3. The cancel button in the invoice is dummy if the invoice is not\n"
-"   cancelled in the SAT.\n"
-"\n"
-"Which is the new flow to cancel?\n"
-"--------------------------------\n"
-"\n"
-"A new button `(Request Cancelation)` was added on the invoice view, that\n"
-"appear when the invoice is open and the `PAC status` is `Signed`\n"
-"\n"
-"When this new button is press, send the CFDI to the PAC to try cancel it\n"
-"in the SAT system. And do not allows to cancel the invoice in Odoo until\n"
-"it was properly canceled in the SAT. (This is an automatic action that\n"
-"execute the system).\n"
-"\n"
-"If any invoice is cancelled in the SAT, and the user can not wait for the\n"
-"cron, could press the `Cancel` button, and this must be cancelled.\n"
-"\n"
-"Which are the cases supported in this module?\n"
-"---------------------------------------------\n"
-"\n"
-"**Case 1**\n"
-"\n"
-"+----------+---------+\n"
-"| System   | State   |\n"
-"+==========+=========+\n"
-"| Odoo     | Open    |\n"
-"+----------+---------+\n"
-"| PAC      | Signed  |\n"
-"+----------+---------+\n"
-"| SAT      | Valid   |\n"
-"+----------+---------+\n"
-"\n"
-"This case is when the invoice is properly signed in the SAT system. To\n"
-"cancel is necessary to press the button `Request Cancelation`, that will\n"
-"to verify that effectively the CFDI is not previously canceled in the SAT\n"
-"system and will to send it to cancel in the SAT.\n"
-"\n"
-"After of request the cancelation, could be found the next cases:\n"
-"\n"
-"*The cancel process was succesful*\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | Cancelled  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"In this case, the system will execute the next actions:\n"
-"\n"
-"1. An action will to update the PAC status (To Canceled).\n"
-"\n"
-"2. A method will be called and will try to cancel the invoice in Odoo.\n"
-"\n"
-"\n"
-"*The cancel process cannot be completed*\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"In this case, the system wait for the PAC system, and will execute the next\n"
-"action:\n"
-"\n"
-"1. A method will be called to verify if the CFDI was properly cancelled in\n"
-"the SAT system, and when the SAT status is `Cancelled` will try to cancel the\n"
-"invoice in Odoo.\n"
-"\n"
-"**Case 2**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"This case is the same that in the previous case when the cancel process\n"
-"cannot be completed.\n"
-"\n"
-"If the customer does not accept the CFDI cancelation, the cancel process\n"
-"must be aborted and the invoice must be returned to signed. For this, was\n"
-"added an action in the invoice `Revert CFDI cancellation`, that could be\n"
-"called in the `Actions` of it.\n"
-"\n"
-"\n"
-"**Case 3**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Open       |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Cancelled  |\n"
-"+----------+------------+\n"
-"\n"
-"The system executes a scheduled action that will cancel the invoice in Odoo,\n"
-"and in that process, the PAC status must be updated to `Cancelled`.\n"
-"\n"
-"\n"
-"**Case 4**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Cancel     |\n"
-"+----------+------------+\n"
-"| PAC      | Signed     |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"The system executes a scheduled action that will check that the SAT status\n"
-"continues `Valid` and if yes, the invoice must be returned to `Open`\n"
-"(Without generate a new CFDI). For this:\n"
-"\n"
-"1. If the invoice does not has a journal entry, a new will be generated and\n"
-"the invoice state must be changed to `Open`.\n"
-"\n"
-"2. If the journal entry in the invoice has a revert, it will be cancelled\n"
-"and the invoice state must be changed to `Open`.\n"
-"\n"
-"**Case 5**\n"
-"\n"
-"+----------+------------+\n"
-"| System   | State      |\n"
-"+==========+============+\n"
-"| Odoo     | Cancel     |\n"
-"+----------+------------+\n"
-"| PAC      | To Cancel  |\n"
-"+----------+------------+\n"
-"| SAT      | Valid      |\n"
-"+----------+------------+\n"
-"\n"
-"This is the same case that in the previous one, but extra after that the\n"
-"invoice is open again, the PAC status must be updated to 'Signed.'\n"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_cancellation
-msgid "EDI Cancellation for Mexican Localization"
 msgstr ""
 
 #. module: base
@@ -11537,11 +10819,6 @@ msgid ""
 "* Traceability report\n"
 "* Cost Structure report (mrp_account)"
 msgstr ""
-"Корпоративное расширение для Управления Ресурсами Производства\n"
-"\n"
-"* Планирование заказа на работу.  Проверка планирования по представлениям Ганта, сгруппированным по производственному заказу / рабочему центру\n"
-"* Отчет о прослеживаемости\n"
-"* Отчет о структуре затрат (mrp_account)"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_R
@@ -11633,7 +10910,7 @@ msgstr "Эфиопия - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_et_reports
 msgid "Ethiopia - Accounting Reports"
-msgstr "Эфиопия - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:res.country.group,name:base.europe
@@ -11804,12 +11081,12 @@ msgstr "Экспорт переводов"
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_expense_sepa
 msgid "Export expenses payments as SEPA Credit Transfer files"
-msgstr "Экспорт расходов платежей в виде файлов кредитных переводов SEPA"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_sepa
 msgid "Export payments as SEPA Credit Transfer files"
-msgstr "Экспорт платежей в виде файлов кредитных переводов SEPA"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_server_object_lines_value
@@ -12059,15 +11336,6 @@ msgid "F CONSTRUCTION"
 msgstr ""
 
 #. module: base
-#: code:addons/base/ir/ir_mail_server.py:128
-#, python-format
-msgid ""
-"Failed to encode the address %s\n"
-"from mail header:\n"
-"%s"
-msgstr ""
-
-#. module: base
 #: model:res.country,name:base.fk
 msgid "Falkland Islands"
 msgstr "Фолклендские (Мальвинские) острова"
@@ -12263,12 +11531,6 @@ msgid "Field names must be unique per model."
 msgstr "Имена полей должны быть уникальными для каждой модели."
 
 #. module: base
-#: code:addons/model.py:143
-#, python-format
-msgid "Field:"
-msgstr "Поле:"
-
-#. module: base
 #: model:ir.actions.act_window,name:base.action_model_fields
 #: model:ir.model,name:base.model_ir_model_fields
 #: model:ir.model.fields,field_description:base.field_ir_model_field_id
@@ -12286,13 +11548,7 @@ msgid "Fields Description"
 msgstr "Описание полей"
 
 #. module: base
-#: code:addons/models.py:2564
-#, python-format
-msgid "Fields:"
-msgstr "Поля:"
-
-#. module: base
-#: code:addons/base/ir/ir_model.py:595
+#: code:addons/base/ir/ir_model.py:582
 #, python-format
 msgid "Fields: %s"
 msgstr "Поля: %s"
@@ -12409,29 +11665,6 @@ msgstr "Финляндия"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mail_push
 msgid "Firebase Cloud Messaging"
-msgstr "Обмен сообщениями Firebase Cloud"
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_reports_closing
-msgid ""
-"Fiscal Reports for Closing Entry\n"
-"================================\n"
-"\n"
-"Trial Balance report is complemented to allow generate the closing entry\n"
-"(A.K.A Month 13th move)\n"
-"\n"
-"Configuration\n"
-"=============\n"
-"\n"
-"Steps to get the report:\n"
-"\n"
-"1. The journal entry for transfer of exercises must be generated manually\n"
-"   with the end date of the fiscal year that is closing. And must be posted.\n"
-"\n"
-"2. This entry must be marked as closing entry for the fiscal year.\n"
-"\n"
-"3. The trial balance Month 13 report must be generated with dates for all the\n"
-"   fiscal year to report.\n"
 msgstr ""
 
 #. module: base
@@ -12586,28 +11819,23 @@ msgstr "Франция - FEC"
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_certification
 msgid "France - VAT Anti-Fraud Certification (CGI 286 I-3 bis)"
 msgstr ""
-"Франция - Сертификация НДС по борьбе с мошенничеством (CGI 286 I-3 bis)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_sale_closing
 msgid ""
 "France - VAT Anti-Fraud Certification (CGI 286 I-3 bis) - Sale Closings"
 msgstr ""
-"Франция - Сертификация НДС по борьбе с мошенничеством (CGI 286 I-3 bis) - "
-"Закрытие Продаж"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_pos_cert
 msgid ""
 "France - VAT Anti-Fraud Certification for Point of Sale (CGI 286 I-3 bis)"
 msgstr ""
-"Франция - Сертификация НДС по борьбе с мошенничеством для пункта продажи "
-"(CGI 286 I-3 bis)"
 
 #. module: base
 #: model:res.country,name:base.gf
 msgid "French Guiana"
-msgstr "Французская Гвиана"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_fr_hr_payroll
@@ -12617,7 +11845,7 @@ msgstr "Французская Платежная ведомость"
 #. module: base
 #: model:res.country,name:base.pf
 msgid "French Polynesia"
-msgstr "Французская Полинезия"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.tf
@@ -13030,12 +12258,12 @@ msgstr "Группы (нет группы = все)"
 #. module: base
 #: model:res.country,name:base.gp
 msgid "Guadeloupe"
-msgstr "Гваделупа"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gu
 msgid "Guam"
-msgstr "Гуам"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gt
@@ -13060,7 +12288,7 @@ msgstr "Гвинея"
 #. module: base
 #: model:res.country,name:base.gw
 msgid "Guinea-Bissau"
-msgstr "Гвинея-Бисау"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.gy
@@ -13155,7 +12383,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.hm
 msgid "Heard Island and McDonald Islands"
-msgstr "Остров Херд и острова Макдональд"
+msgstr ""
 
 #. module: base
 #: selection:ir.translation,type:0
@@ -13424,7 +12652,7 @@ msgstr "Венгерский учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_hu_reports
 msgid "Hungarian - Accounting Reports"
-msgstr "Венгерия - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.hu
@@ -13814,8 +13042,6 @@ msgid ""
 "Implements the registered cash system, adhering to guidelines by FPS "
 "Finance."
 msgstr ""
-"Внедряет зарегистрированную кассовую систему, следуя инструкциям FPS "
-"Finance."
 
 #. module: base
 #: model:ir.ui.menu,name:base.menu_translation_export
@@ -13825,12 +13051,12 @@ msgstr "Импорт / экспорт"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_camt
 msgid "Import CAMT Bank Statement"
-msgstr "Импорт CAMT Банковской Выписки"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_csv
 msgid "Import CSV Bank Statement"
-msgstr "Импорт CSV Банковской Выписки"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_bank_statement_import_ofx
@@ -13853,11 +13079,6 @@ msgstr "Импорт перевода"
 #: model:ir.module.module,description:base.module_currency_rate_live
 msgid "Import exchange rates from the Internet.\n"
 msgstr "Импортировать курсы обмена из интернета\n"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_account_reports_cash_flow
-msgid "Improved Cash Flow Statement"
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_modules
@@ -13905,7 +13126,7 @@ msgstr "Индия - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_reports
 msgid "Indian - Accounting Reports"
-msgstr "Индия - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_purchase
@@ -13920,7 +13141,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_schedule6
 msgid "Indian - Schedule VI Accounting"
-msgstr "Индия - Таблица VI Бухгалтерский учет"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_in_stock
@@ -14315,7 +13536,7 @@ msgstr "Ирландия"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_lock
 msgid "Irreversible Lock Date"
-msgstr "Необратимая дата блокировки"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_is_company
@@ -14383,7 +13604,7 @@ msgstr "Япония - бухгалтерский учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_jp_reports
 msgid "Japan - Accounting Reports"
-msgstr "Япония - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.je
@@ -14470,17 +13691,12 @@ msgstr "Кирибати"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_forum
 msgid "Knowledge base for helpdesk based on Odoo Forum"
-msgstr "База знаний для службы поддержки на базе форума Odoo"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_si
 msgid "Kontni načrt za gospodarske družbe"
 msgstr "План счетов для компаний"
-
-#. module: base
-#: model:res.country,name:base.xk
-msgid "Kosovo"
-msgstr "Косово"
 
 #. module: base
 #: model:res.country,name:base.kw
@@ -14490,7 +13706,7 @@ msgstr "Кувейт"
 #. module: base
 #: model:res.country,name:base.kg
 msgid "Kyrgyzstan"
-msgstr "Киргизия"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_L
@@ -14853,7 +14069,7 @@ msgstr "Автоматизация лидов"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_crm_score
 msgid "Lead Scoring"
-msgstr "Лид-скоринг"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_project
@@ -15018,7 +14234,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_project_forecast_sale
 msgid "Link module between project_forecast and sale(_timesheet)"
-msgstr "Модуль связи между project_forecast и sale(_timesheet)"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_link_field_id
@@ -15150,7 +14366,7 @@ msgstr "Люксембург - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_lu_reports
 msgid "Luxembourg - Accounting Reports"
-msgstr "Люксембург - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_M
@@ -15165,7 +14381,7 @@ msgstr "MRP Субпродукты"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_quality_mrp
 msgid "MRP features for Quality Control"
-msgstr "Функции MRP для контроля качества"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mo
@@ -15227,7 +14443,7 @@ msgstr "Координатор"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_maintenance
 msgid "Maintenance - MRP"
-msgstr "Техническое обслуживание - MRP"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mw
@@ -15429,7 +14645,7 @@ msgstr "Марокко - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ma_reports
 msgid "Maroc - Accounting Reports"
-msgstr "Марокко - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mh
@@ -15439,7 +14655,7 @@ msgstr "Маршалловы Острова"
 #. module: base
 #: model:res.country,name:base.mq
 msgid "Martinique"
-msgstr "Мартиника"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mass_mailing_themes
@@ -15647,7 +14863,7 @@ msgstr "Отсутствует требуемое значение для пол
 #: code:addons/base/ir/ir_ui_view.py:387
 #, python-format
 msgid "Missing view architecture."
-msgstr "Отсутствует архитектура вида."
+msgstr ""
 
 #. module: base
 #: model:res.partner.title,name:base.res_partner_title_mister
@@ -15692,7 +14908,7 @@ msgstr "Модель"
 #: code:addons/base/ir/ir_model.py:471
 #, python-format
 msgid "Model %s does not exist"
-msgstr "Модель %s не существует"
+msgstr ""
 
 #. module: base
 #: code:addons/base/ir/ir_model.py:631
@@ -15764,12 +14980,6 @@ msgstr "Модель не найдена: %(model)s"
 #: model:ir.model.fields,help:base.field_ir_act_server_model_id
 #: model:ir.model.fields,help:base.field_ir_cron_model_id
 msgid "Model on which the server action runs."
-msgstr ""
-
-#. module: base
-#: code:addons/model.py:142 code:addons/model.py:152
-#, python-format
-msgid "Model:"
 msgstr ""
 
 #. module: base
@@ -15850,8 +15060,6 @@ msgid ""
 "Module loading %s failed: file %s could not be processed:\n"
 " %s"
 msgstr ""
-"Не удалось загрузить модуль %s: файл %s не может быть обработан:\n"
-" %s"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_translation_module
@@ -15872,7 +15080,7 @@ msgstr ""
 #. module: base
 #: model:res.country,name:base.md
 msgid "Moldova"
-msgstr "Молдавия"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.mc
@@ -15927,7 +15135,7 @@ msgstr "Г-н"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_mrp_workorder
 msgid "Mrp Workorder"
-msgstr "MRP Порядок Работы"
+msgstr ""
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_madam
@@ -15973,11 +15181,6 @@ msgstr "Мьянма"
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_N
 msgid "N ADMINISTRATIVE AND SUPPORT SERVICE ACTIVITIES"
-msgstr ""
-
-#. module: base
-#: model:res.country,vat_label:base.gt
-msgid "NIT"
 msgstr ""
 
 #. module: base
@@ -16046,12 +15249,12 @@ msgstr "Нидерланды - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_nl_reports
 msgid "Netherlands - Accounting Reports"
-msgstr "Нидерланды - Бухгалтерские отчёты"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.nc
 msgid "New Caledonia"
-msgstr "Новая Каледония"
+msgstr ""
 
 #. module: base
 #: code:addons/base/module/wizard/base_export_language.py:18
@@ -16233,7 +15436,7 @@ msgstr "Норвегия - план счетов"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_no_reports
 msgid "Norway - Accounting Reports"
-msgstr "Норвегия - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: selection:ir.module.module,state:0
@@ -16860,19 +16063,8 @@ msgid "Odoo Mexican Localization Reports"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_reports_closing
-msgid "Odoo Mexican Localization Reports for Closing"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_customs
 msgid "Odoo Mexico Localization for Invoice with customs Number"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_edi_sale_coupon
-#: model:ir.module.module,summary:base.module_l10n_mx_edi_sale_coupon
-msgid "Odoo Mexico Localization for Sale Coupon"
 msgstr ""
 
 #. module: base
@@ -16883,7 +16075,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_web_mobile
 msgid "Odoo Mobile Core module"
-msgstr "Модуль Odoo Mobile Core"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_note
@@ -17689,12 +16881,6 @@ msgid "Open a Window"
 msgstr "Открыть окно"
 
 #. module: base
-#: code:addons/base/ir/ir_model.py:1215 code:addons/models.py:2888
-#, python-format
-msgid "Operation:"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_crm
 msgid "Opportunity to Quotation"
 msgstr "Возможность в Запрос цен"
@@ -18279,11 +17465,6 @@ msgid "Payment Acquirer: Stripe Implementation"
 msgstr "Платеж покупателя: Stripe осуществлен"
 
 #. module: base
-#: model:ir.module.module,summary:base.module_payment_stripe_sca
-msgid "Payment Acquirer: Stripe Implementation for the EU PSD2"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,summary:base.module_payment_transfer
 msgid "Payment Acquirer: Transfer Implementation"
 msgstr "Платеж покупателя: Перевод осуществлен"
@@ -18372,7 +17553,7 @@ msgstr "Телефон:"
 #. module: base
 #: model:res.country,name:base.pn
 msgid "Pitcairn Islands"
-msgstr "Острова Питкэрн"
+msgstr ""
 
 #. module: base
 #: selection:ir.actions.act_window.view,view_mode:0
@@ -18418,7 +17599,7 @@ msgstr ""
 #: code:addons/base/ir/ir_model.py:472
 #, python-format
 msgid "Please specify a valid model for the object relation"
-msgstr "Пожалуйста, укажите действительную модель для отношения объекта"
+msgstr ""
 
 #. module: base
 #: code:addons/base/res/res_users.py:255
@@ -18559,32 +17740,32 @@ msgstr "Печать Счета-фактуры"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_print_docsaway
 msgid "Print Provider : DocsAway"
-msgstr "Провайдер печати : DocsAway"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_print_sale
 msgid "Print Sale"
-msgstr "Печать продажи"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_l10n_us_check_printing
 msgid "Print US Checks"
-msgstr "Печать американских чеков"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_expense_check
 msgid "Print amount in words on checks issued for expenses"
-msgstr "Печатать сумму для расходов в словесном виде"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_print_docsaway
 msgid "Print and Send Invoices with DocsAway.com"
-msgstr "Печать и отправка счетов с помощью DocsAway.com"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_print
 msgid "Print and Send Provider Base Module"
-msgstr "Базовый модуль поставщика услуг печати и отправки документов"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_print
@@ -18592,9 +17773,6 @@ msgid ""
 "Print and Send Provider Base Module. Print and send your invoice with a "
 "Postal Provider. This required to install a module implementing a provider."
 msgstr ""
-"Базовый модуль поставщика услуг печати и отправки. Распечатайте и отправьте "
-"счет почтовому провайдеру. Это необходимо для установки модуля, реализующего"
-" провайдера."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_print_sale
@@ -18626,7 +17804,7 @@ msgstr "Личный адрес"
 #. module: base
 #: model:ir.ui.view,arch_db:base.res_partner_view_form_private
 msgid "Private Address Form"
-msgstr "Форма частного адреса"
+msgstr ""
 
 #. module: base
 #: code:addons/models.py:112
@@ -18828,7 +18006,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_hw_screen
 msgid "Provides support for customer facing displays"
-msgstr "Обеспечивает поддержку дисплеев, обращенных к клиенту"
+msgstr ""
 
 #. module: base
 #: model:res.groups,name:base.group_public
@@ -18913,7 +18091,7 @@ msgstr "Закупки"
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_push
 msgid "Push notification for mobile app"
-msgstr "Push-уведомление для мобильного приложения"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_server_code
@@ -18950,7 +18128,7 @@ msgstr "Катар"
 #. module: base
 #: model:ir.module.module,summary:base.module_quality
 msgid "Quality Alerts and Control Points"
-msgstr "Оповещения о качестве и контрольные точки"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_quality
@@ -18960,7 +18138,7 @@ msgstr "Контроль качества"
 #. module: base
 #: model:ir.module.module,summary:base.module_quality_mrp
 msgid "Quality Management with MRP"
-msgstr "Управление качеством с MRP"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_event_questions
@@ -19092,14 +18270,6 @@ msgstr "Запись не существует или была удалена."
 #: model:ir.ui.view,arch_db:base.view_rule_tree
 msgid "Record rules"
 msgstr "Ограничение доступа"
-
-#. module: base
-#: code:addons/base/ir/ir_actions.py:245 code:addons/models.py:2789
-#: code:addons/models.py:2875 code:addons/models.py:2889
-#: code:addons/models.py:3235 code:addons/models.py:4020
-#, python-format
-msgid "Records:"
-msgstr ""
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_hr_recruitment
@@ -19415,7 +18585,7 @@ msgstr "Румыния - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ro_reports
 msgid "Romania - Accounting Reports"
-msgstr "Румыния - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_rounding
@@ -19468,7 +18638,7 @@ msgstr "Руанда"
 #. module: base
 #: model:res.country,name:base.re
 msgid "Réunion"
-msgstr "Реюньон"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_S
@@ -19483,7 +18653,7 @@ msgstr "SEPA кредитный перевод"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_expense_sepa
 msgid "SEPA Credit Transfer in Expenses"
-msgstr "SEPA кредитный перевод в расходах"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_sepa_direct_debit
@@ -19533,12 +18703,12 @@ msgstr "Святой Варфоломей"
 #. module: base
 #: model:res.country,name:base.sh
 msgid "Saint Helena, Ascension and Tristan da Cunha"
-msgstr "Острова Святой Елены, Вознесения и Тристан-да-Кунья"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.kn
 msgid "Saint Kitts and Nevis"
-msgstr "Сент-Китс и Невис"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.lc
@@ -19558,7 +18728,7 @@ msgstr "Сен-Пьер и Микелон"
 #. module: base
 #: model:res.country,name:base.vc
 msgid "Saint Vincent and the Grenadines"
-msgstr "Сент-Винсент и Гренадины"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_contract_salary
@@ -19632,7 +18802,7 @@ msgstr "Табели продаж"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_timesheet_grid_sale
 msgid "Sales Timesheet: Grid Support"
-msgstr "Продажи Табель учета рабочего времени: Поддержка cетки"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_sale_mrp
@@ -19706,7 +18876,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_maintenance
 msgid "Schedule and manage maintenance on machine and tools."
-msgstr "Запланировать и управлять обслуживанием станка и инструментов."
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_project_timesheet_holidays
@@ -19806,7 +18976,7 @@ msgstr "Смотреть все возможные значения"
 #: code:addons/common.py:42
 #, python-format
 msgid "See http://openerp.com"
-msgstr "См. http://openerp.com"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_report_paperformat_format
@@ -19898,8 +19068,6 @@ msgstr ""
 msgid ""
 "Send documents to sign online, receive and archive filled copies (esign)"
 msgstr ""
-"Отправлять документы для подписи онлайн, получать и архивировать заполненные"
-" копии (электронная подпись)"
 
 #. module: base
 #: model:ir.module.module,description:base.module_calendar_sms
@@ -19910,22 +19078,22 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
 msgid "Send your shippings through DHL and track them online"
-msgstr "Отправляйте свои посылки через DHL и отслеживайте их онлайн"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex
 msgid "Send your shippings through Fedex and track them online"
-msgstr "Отправляйте свои посылки через Fedex и отслеживайте их онлайн"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_ups
 msgid "Send your shippings through UPS and track them online"
-msgstr "Отправляйте свои посылки через UPS и отслеживайте их онлайн"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_usps
 msgid "Send your shippings through USPS and track them online"
-msgstr "Отправляйте свои посылки через USPS и отслеживайте их онлайн"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.sn
@@ -20162,7 +19330,7 @@ msgstr "Сингапур - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_sg_reports
 msgid "Singapore - Accounting Reports"
-msgstr "Сингапур - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.sx
@@ -20207,7 +19375,7 @@ msgstr "Словения - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_si_reports
 msgid "Slovenian - Accounting Reports"
-msgstr "Словения - Бухгалтерские отчеты"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_image_small
@@ -20337,7 +19505,7 @@ msgstr "Испания - Бухгалтерский учет (PGCE 2008)"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_es_reports
 msgid "Spain - Accounting (PGCE 2008) Reports"
-msgstr "Испания - Бухгалтерский учет (PGCE 2008) отчеты"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_base_sparse_field
@@ -20417,7 +19585,7 @@ msgstr "Название Региона"
 #. module: base
 #: model:res.country,name:base.ps
 msgid "State of Palestine"
-msgstr "Государство Палестина"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_country_state_ids
@@ -20464,12 +19632,12 @@ msgstr "Запасы"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_stock_barcode_mobile
 msgid "Stock Barcode in Mobile"
-msgstr "Cкладские штрих-код в мобильном устройстве"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_stock_barcode_mobile
 msgid "Stock Barcode scan in Mobile"
-msgstr "Сканирование cкладских штрих-кода в мобильном устройстве"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_model_fields_store
@@ -20522,12 +19690,6 @@ msgstr "Улица2"
 #: model:ir.module.module,shortdesc:base.module_payment_stripe
 msgid "Stripe Payment Acquirer"
 msgstr "Stripe платежная система"
-
-#. module: base
-#: model:ir.module.module,description:base.module_payment_stripe_sca
-#: model:ir.module.module,shortdesc:base.module_payment_stripe_sca
-msgid "Stripe Payment Acquirer - Strong Customer Authentication Update"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_studio
@@ -20608,7 +19770,7 @@ msgstr "Опросы"
 #. module: base
 #: model:res.country,name:base.sj
 msgid "Svalbard and Jan Mayen"
-msgstr "Шпицберген и Ян-Майен"
+msgstr ""
 
 #. module: base
 #: model:res.country,name:base.sz
@@ -20633,7 +19795,7 @@ msgstr "Швейцария - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_ch_reports
 msgid "Switzerland - Accounting Reports"
-msgstr "Швейцария - Бухгалтерские отчёты"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_currency_symbol
@@ -20676,7 +19838,7 @@ msgstr "Обновление Системы"
 #. module: base
 #: model:res.country,name:base.st
 msgid "São Tomé and Príncipe"
-msgstr "Сан-Томе и Принсипи"
+msgstr ""
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_T
@@ -20761,573 +19923,6 @@ msgstr "Целевой вид"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_cash_basis_base_account
 msgid "Tax Cash Basis Edit Base Account"
-msgstr "Налоговая наличная база Редактирование базового счета"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_mx_tax_cash_basis
-msgid "Tax Cash Basis Entries at Payment Date"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,description:base.module_l10n_mx_tax_cash_basis
-msgid ""
-"Tax Cash Basis Entries at Payment Date\n"
-"======================================\n"
-"\n"
-"Allow to create the Journal Entries for Taxes at date of payment.\n"
-"The following tests cases pretend to enlight you on what is expected of each\n"
-"one according to Mexican requirements.\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment before Invoice\n"
-"-------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                1160    USD\n"
-"                Revenue                 1000       -1000    USD\n"
-"                Taxes to Collect         160        -160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1450                1160    USD\n"
-"                Receivable              1450       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable           290                   0    USD\n"
-"                Gain Exchange rate       290           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Taxes to Collect     200                 160    USD\n"
-"                Taxes to Paid            200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 1250.00\n"
-"            - Paid to SAT MXN 200.00\n"
-"            - Have a difference of MXN 40.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Loss Exchange rate    40                   0    USD\n"
-"                Taxes to Collect          40           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment after Invoice\n"
-"------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1450                1160    USD\n"
-"                Revenue                 1250       -1000    USD\n"
-"                Taxes to Collect         200        -160    USD\n"
-"\n"
-"        Payment issued today in USD at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                 928                1160    USD\n"
-"                Receivable               928       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   522                   0    USD\n"
-"                Receivable               522           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Taxes to Collect     128                 160    USD\n"
-"                Taxes to Paid            128        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 800.00\n"
-"            - Paid to SAT MXN 128.00\n"
-"            - Have a difference of MXN -72.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Gain in Exchange Rate Difference\n"
-"\n"
-"            Taxes to Collect      72                   0    USD\n"
-"                Gain Exchange rate        72           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment same day than Invoice\n"
-"--------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1450                1160    USD\n"
-"                Revenue                 1250       -1000    USD\n"
-"                Taxes to Collect         200        -160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1450                1160    USD\n"
-"                Receivable              1450       -1160    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Taxes to Collect     200                 160    USD\n"
-"                Taxes to Paid            200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 1250.00\n"
-"            - Paid to SAT MXN 200.00\n"
-"            - Have no difference for Taxes to Collect\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Two Days Ago (USD)\n"
-"--------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                   -      -\n"
-"                Revenue                 1000           -      -\n"
-"                Taxes to Collect         160           -      -\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1160                 928    USD\n"
-"                Receivable              1160        -928    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   0      -\n"
-"                Tax Base Account        1000           0      -\n"
-"            Taxes to Collect     160                   0      -\n"
-"                Taxes to Paid            160           0      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case):\n"
-"              * Tax Base Account MXN 1000.00\n"
-"            - Paid to SAT MXN 160.00\n"
-"            - Have no difference for Taxes to Collect\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (USD) Payment Today (MXN)\n"
-"-------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                1160    USD\n"
-"                Revenue                 1000       -1000    USD\n"
-"                Taxes to Collect         160        -160    USD\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                 928                   -      -\n"
-"                Receivable               928           -      -\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   232                 232    USD\n"
-"                Receivable               232        -232    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                   0    USD\n"
-"                Tax Base Account         800           0    USD\n"
-"            Taxes to Collect     128                   0    USD  # (I'd expect the same value as in the invoice for amount_currency in tax: 160 USD) \n"
-"                Taxes to Paid            128           0    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 800.00\n"
-"            - Paid to SAT MXN 128.00\n"
-"            - Have a difference of MXN -32.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Gain in Exchange Rate Difference\n"
-"\n"
-"            Taxes to Collect      32                   0    USD\n"
-"                Gain Exchange rate        32           0    USD\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Today (MXN)\n"
-"-------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1160                   -      -\n"
-"                Revenue                 1000           -      -\n"
-"                Taxes to Collect         160           -      -\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Bank                1160                   -      -\n"
-"                Receivable              1160           -      -\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   -      -\n"
-"                Tax Base Account        1000           -      -\n"
-"            Taxes to Collect     160                   -      -\n"
-"                Taxes to Paid            160           -      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 1000.00\n"
-"            - Paid to SAT MXN 160.00\n"
-"            - Have no difference for Taxes to Collect\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment before Invoice (Supplier)\n"
-"------------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                1000    USD\n"
-"            Unpaid Taxes         160                 160    USD\n"
-"\n"
-"                Payable                 1160       -1160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1450                1160    USD\n"
-"                Bank                    1450       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   290                   0    USD\n"
-"                Payable                  290           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Creditable Tax       200                 160    USD\n"
-"                Unpaid Taxes             200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1250.00\n"
-"            - Creditable Tax MXN 200.00\n"
-"            - Have a difference of MXN -40.00 for Unpaid Taxes that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Unpaid Taxes          40                   0    USD\n"
-"                Gain Exchange rate        40           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment after Invoice (Supplier)\n"
-"-----------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1250                1000    USD\n"
-"            Unpaid Taxes         200                 160    USD\n"
-"\n"
-"                Payable                 1450       -1160    USD\n"
-"\n"
-"        Payment issued today in USD at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              928                1160    USD\n"
-"                Bank                     928       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              522                   0    USD\n"
-"                Gain Exchange rate       522           0    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Creditable Tax       128                 160    USD\n"
-"                Unpaid Taxes             128        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 800.00\n"
-"            - Creditable Tax MXN 128.00\n"
-"            - Have a difference of MXN 72.00 for Unpaid Taxes that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Loss Exchange rate    72                   0    USD\n"
-"                Unpaid Taxes              72           0    USD\n"
-"\n"
-"\n"
-"Case Multi-currency (both invoice & payment) Payment same day than Invoice (Supplier)\n"
-"-------------------------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1250                1000    USD\n"
-"            Unpaid Taxes         200                 160    USD\n"
-"\n"
-"                Payable                 1450       -1160    USD\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.8 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1450                1160    USD\n"
-"                Bank                    1450       -1160    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1250                1000    USD\n"
-"                Tax Base Account        1250       -1000    USD\n"
-"            Creditable Tax       200                 160    USD\n"
-"                Unpaid Taxes             200        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1250.00\n"
-"            - Creditable Tax MXN 200.00\n"
-"            - Have no difference for Unpaid Taxes\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Two Days Ago (USD) (Supplier)\n"
-"-------------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                   -      -\n"
-"            Unpaid Taxes         160                   -      -\n"
-"\n"
-"                Payable                 1160           -      -\n"
-"\n"
-"        Payment issued two days ago in USD at a rate => 1 MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1160                 928    USD\n"
-"                Bank                    1160        -928    USD\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   0      -\n"
-"                Tax Base Account        1000           0      -\n"
-"            Creditable Tax       160                   0      -\n"
-"                Unpaid Taxes             160           0      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1000.00\n"
-"            - Creditable Tax MXN 160.00\n"
-"            - Have no difference for Unpaid Taxes\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (USD) Payment Today (MXN) (Supplier)\n"
-"------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in USD at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                1000    USD\n"
-"            Unpaid Taxes         160                 160    USD\n"
-"\n"
-"                Payable                 1160       -1160    USD\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              928                   -      -\n"
-"                Bank                     928           -      -\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Payable              232                 232    USD\n"
-"                Gain Exchange rate       522        -232    USD\n"
-"\n"
-"        And a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                   0    USD\n"
-"                Tax Base Account         800           0    USD\n"
-"            Creditable Tax       128                   0    USD  # (I'd expect the same value as in the invoice for amount_currency in tax: 160 USD) \n"
-"                Unpaid Taxes             128           0    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 800.00\n"
-"            - Creditable Tax MXN 128.00\n"
-"            - Have a difference of MXN 32.00 for Unpaid Taxes that I would\n"
-"              later have to issue as a Loss in Exchange Rate Difference\n"
-"\n"
-"            Loss Exchange rate    32                   0    USD\n"
-"                Unpaid Taxes              32           0    USD\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Payment Today (MXN) (Supplier)\n"
-"------------------------------------------------------------\n"
-"\n"
-"        Test to validate tax effectively Payable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued yesterday in MXN at a rate => 1MXN = 1 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Expenses            1000                   -      -\n"
-"            Unpaid Taxes         160                   -      -\n"
-"\n"
-"                Payable                 1160           -      -\n"
-"\n"
-"        Payment issued today in MXN at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Payable             1160                   -      -\n"
-"                Bank                    1160           -      -\n"
-"\n"
-"        This does not generates any Exchange Rate Difference.\n"
-"\n"
-"        But a Tax Cash Basis Entry is generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account    1000                   -      -\n"
-"                Tax Base Account        1000           -      -\n"
-"            Creditable Tax       160                   -      -\n"
-"                Unpaid Taxes             160           -      -\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT: Tax Base Account MXN 1000.00\n"
-"            - Creditable Tax MXN 160.00\n"
-"            - Have no difference for Unpaid Taxes\n"
-"\n"
-"\n"
-"Case Invoiced Yesterday (MXN) Credit Note Today (MXN) (Customer)\n"
-"----------------------------------------------------------------\n"
-"        Test to validate tax effectively receivable\n"
-"\n"
-"        My company currency is MXN.\n"
-"\n"
-"        Invoice issued two days ago in USD at a rate => 1MXN = 0.80 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Receivable          1450                1160    USD\n"
-"                Revenue                 1250       -1000    USD\n"
-"                Taxes to Collect         200        -160    USD\n"
-"\n"
-"        Credit Note issued today in USD at a rate => 1 MXN = 1.25 USD.\n"
-"        Booked like:\n"
-"\n"
-"            Revenue              800                1000    USD\n"
-"            Taxes to Collect     128                 160    USD\n"
-"\n"
-"                Receivable               928       -1160    USD\n"
-"\n"
-"        This Generates a Exchange Rate Difference.\n"
-"        Booked like:\n"
-"\n"
-"            Loss Exchange rate   522                   0    USD\n"
-"                Receivable               522           0    USD\n"
-"\n"
-"        And two Tax Cash Basis Entry are generated.\n"
-"        Booked like:\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Taxes to Collect     128                 160    USD\n"
-"                Taxes to Paid            128        -160    USD\n"
-"\n"
-"            Tax Base Account     800                1000    USD\n"
-"                Tax Base Account         800       -1000    USD\n"
-"            Taxes to Paid        128                 160    USD\n"
-"                Taxes to Collect         128        -160    USD\n"
-"\n"
-"        What I expect from here:\n"
-"            - Base to report to DIOT if it would be the case (not in this case): \n"
-"              * Tax Base Account MXN 800.00 and MXN -800.00\n"
-"            - Paid to SAT MXN 0.00\n"
-"            - Have a difference of MXN -72.00 for Taxes to Collect that I would\n"
-"              later have to issue as a Gain in Exchange Rate Difference\n"
-"\n"
-"            Taxes to Collect      72                   0    USD\n"
-"                Gain Exchange rate        72           0    USD\n"
-"\n"
-"Credits\n"
-"=======\n"
-"\n"
-"**Contributors**\n"
-"\n"
-"* Nhomar Hernandez <nhomar@vauxoo.com> (Planner/Auditor)\n"
-"* Luis Torres <luis_t@vauxoo.com> (Auditor)\n"
-"* Humberto Arocha <luis_t@vauxoo.com> (Planner/Developer)\n"
 msgstr ""
 
 #. module: base
@@ -21344,14 +19939,12 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_taxcloud_delivery
 msgid "TaxCloud and Delivery - Ecommerce"
-msgstr "TaxCloud и Доставка - Электронная коммерция"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_account_taxcloud
 msgid "TaxCloud make it easy for business to comply with sales tax law"
 msgstr ""
-"TaxCloud упрощает соблюдение налогового законодательства по налогу с продаж "
-"для бизнеса"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_hr
@@ -21422,11 +20015,6 @@ msgid "Test Performance"
 msgstr ""
 
 #. module: base
-#: model:ir.module.module,shortdesc:base.module_test_rpc
-msgid "Test RPC"
-msgstr ""
-
-#. module: base
 #: model:ir.module.module,description:base.module_test_access_rights
 msgid "Testing of access restrictions"
 msgstr "Тестирование ограничений доступа"
@@ -21465,15 +20053,13 @@ msgstr "Таиланд - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_th_reports
 msgid "Thailand - Accounting Reports"
-msgstr "Таиланд - Бухгалтерские отчёты"
+msgstr ""
 
 #. module: base
 #: code:addons/base/res/res_users.py:295
 #, python-format
 msgid "The \"App Switcher\" action cannot be selected as home action."
 msgstr ""
-"Действие \"App Switcher\" не может быть выбрано в качестве домашнего "
-"действия."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_code
@@ -21776,7 +20362,10 @@ msgstr "Единственными предопределенными перем
 #. module: base
 #: code:addons/model.py:121
 #, python-format
-msgid "The operation cannot be completed:"
+msgid ""
+"The operation cannot be completed, probably due to the following:\n"
+"- deletion: you may be trying to delete a record while other records still reference it\n"
+"- creation/update: a mandatory field is not correctly set"
 msgstr ""
 
 #. module: base
@@ -21875,14 +20464,6 @@ msgstr ""
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade_install
 msgid "The selected modules have been updated / installed !"
 msgstr "Выбранные модули будут обновлены / установлены !"
-
-#. module: base
-#: code:addons/base/module/module.py:546
-#, python-format
-msgid ""
-"The server is busy right now, module operations are not possible at this "
-"time, please try again later."
-msgstr ""
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_country_state_code
@@ -22044,8 +20625,6 @@ msgid ""
 "This module ensures that when delivery price is computed online, and taxes are computed with TaxCloud, the tax computation is done correctly on both the order and delivery.\n"
 "    "
 msgstr ""
-"Этот модуль гарантирует, что когда цена доставки рассчитывается онлайн, а налоги вычисляются с помощью TaxCloud, расчет налога выполняется правильно как для заказа, так и для доставки.\n"
-"    "
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_base_module_upgrade
@@ -22070,17 +20649,17 @@ msgstr "Разделитель тысяч"
 #. module: base
 #: model:ir.module.module,summary:base.module_helpdesk
 msgid "Ticketing, Support, Issues"
-msgstr "Билеты, Поддержка, Задачи"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_livechat
 msgid "Ticketing, Support, Livechat"
-msgstr "Билеты, Поддержка, Живой чат"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_slides
 msgid "Ticketing, Support, Slides"
-msgstr "Билеты, Поддержка, Слайды"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang_time_format
@@ -22128,7 +20707,7 @@ msgstr "Смещение часового пояса"
 #. module: base
 #: model:res.country,name:base.tl
 msgid "Timor-Leste"
-msgstr "Восточный Тимор"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_partner_title
@@ -22466,11 +21045,6 @@ msgstr "Великобритания - Учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uk_reports
 msgid "UK - Accounting Reports"
-msgstr "Великобритания - Бухгалтерские Отчёты"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_l10n_uk_reports_hmrc
-msgid "UK - Accounting Reports to HMRC"
 msgstr ""
 
 #. module: base
@@ -22481,7 +21055,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_ups
 msgid "UPS Shipping"
-msgstr "Доставка UPS"
+msgstr ""
 
 #. module: base
 #: selection:ir.attachment,type:0
@@ -22619,7 +21193,7 @@ msgstr "Соединенные Штаты Америки - Бухгалтерс�
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_usps
 msgid "United States Postal Service (USPS) Shipping"
-msgstr "Почтовая служба США (USPS) Доставка"
+msgstr ""
 
 #. module: base
 #: selection:ir.module.module.dependency,state:0
@@ -22628,13 +21202,7 @@ msgid "Unknown"
 msgstr "Неизвестный"
 
 #. module: base
-#: code:addons/models.py:833
-#, python-format
-msgid "Unknown database error: '%s'"
-msgstr ""
-
-#. module: base
-#: code:addons/models.py:996
+#: code:addons/models.py:994
 #, python-format
 msgid "Unknown database identifier '%s'"
 msgstr "Неизвестные идентификаторы базы данных '%s'"
@@ -22677,7 +21245,6 @@ msgstr ""
 msgid ""
 "Unrecognized extension: must be one of .csv, .po, or .tgz (received .%s)."
 msgstr ""
-"Неразрешенное расширение: должно быть .csv, .po, or .tgz (получено .%s)."
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_translation_search
@@ -22763,7 +21330,7 @@ msgstr "Уругвай"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uy_reports
 msgid "Uruguay - Accounts Reports"
-msgstr "Уругвай - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_uy
@@ -22898,15 +21465,6 @@ msgstr "Значения по умолчанию, определённые по�
 #: model:ir.ui.menu,name:base.menu_ir_filters
 msgid "User-defined Filters"
 msgstr "Пользовательские Фильтры"
-
-#. module: base
-#: code:addons/base/ir/ir_actions.py:245 code:addons/base/ir/ir_model.py:1215
-#: code:addons/models.py:2564 code:addons/models.py:2789
-#: code:addons/models.py:2875 code:addons/models.py:2889
-#: code:addons/models.py:3235 code:addons/models.py:4020
-#, python-format
-msgid "User:"
-msgstr "Пользователь:"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_mail_server_smtp_user
@@ -23125,7 +21683,7 @@ msgstr "Вьетнам - Бухгалтерский учет"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_vn_reports
 msgid "Vietnam - Accounting Reports"
-msgstr "Вьетнам - Бухгалтерские Отчёты"
+msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_act_window_view_view_id
@@ -23257,7 +21815,7 @@ msgstr "Стоимость товара на складе WMS"
 #. module: base
 #: model:res.country,name:base.wf
 msgid "Wallis and Futuna"
-msgstr "Уоллис и Футуна"
+msgstr ""
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_warehouse
@@ -23326,7 +21884,7 @@ msgstr "Редактор веб-страниц"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_enterprise
 msgid "Web Enterprise"
-msgstr "Корпоративный Веб"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_web_gantt
@@ -23386,7 +21944,7 @@ msgstr "Конструктор веб-форм"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_form
 msgid "Website Form Helpdesk"
-msgstr "Форма связи службы поддержки веб-сайта"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_gengo
@@ -23401,12 +21959,12 @@ msgstr "Веб-сайт Google Map"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk
 msgid "Website Helpdesk"
-msgstr "Служба поддержки веб-сайта"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
 msgid "Website IM Livechat Helpdesk"
-msgstr "Живой чат службы поддержки веб-сайта"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_links
@@ -23476,7 +22034,7 @@ msgstr ""
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_slides
 msgid "Website Slides Helpdesk"
-msgstr "Cлайды Службы поддержки веб-сайта"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_studio
@@ -23491,7 +22049,7 @@ msgstr "Установка темы сайта"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_version
 msgid "Website Versioning"
-msgstr "Версия веб-сайта"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_wishlist
@@ -23618,7 +22176,7 @@ msgstr "Wkhtmltopdf не было выполнено (код ошибки: %s). 
 #. module: base
 #: model:ir.module.module,summary:base.module_mrp_workorder
 msgid "Work Orders, Planing, Stock Reports."
-msgstr "Рабочие заказы, планирование, отчеты по запасам."
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_payment_sips
@@ -23660,7 +22218,7 @@ msgstr "Yodlee"
 #. module: base
 #: model:ir.module.module,summary:base.module_account_yodlee
 msgid "Yodlee Finance"
-msgstr "Финансы Йодле"
+msgstr ""
 
 #. module: base
 #: model:ir.ui.view,arch_db:base.view_users_simple_form
@@ -23723,7 +22281,7 @@ msgstr "Вы не можете создавать рекурсивные иер�
 #: code:addons/base/ir/ir_ui_view.py:357
 #, python-format
 msgid "You cannot create recursive inherited views."
-msgstr "Вы не можете создавать рекурсивно унаследованные представления."
+msgstr ""
 
 #. module: base
 #: code:addons/base/res/res_users.py:348
@@ -23883,12 +22441,12 @@ msgstr "_unknown"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_online_sync
 msgid "account_online_sync"
-msgstr "account_online_sync"
+msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_account_plaid
 msgid "account_plaid"
-msgstr "account_plaid"
+msgstr ""
 
 #. module: base
 #: code:addons/base/res/res_currency.py:117
@@ -24504,16 +23062,6 @@ msgstr "test-inherits"
 #: model:ir.module.module,shortdesc:base.module_test_limits
 msgid "test-limits"
 msgstr "test-limits"
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_lint
-msgid "test-lint"
-msgstr ""
-
-#. module: base
-#: model:ir.module.module,shortdesc:base.module_test_translation_import
-msgid "test-translation-import"
-msgstr ""
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_uninstall

@@ -6,6 +6,13 @@ import psycopg2
 
 _schema = logging.getLogger('odoo.schema')
 
+_TABLE_KIND = {
+    'BASE TABLE': 'r',
+    'VIEW': 'v',
+    'FOREIGN TABLE': 'f',
+    'LOCAL TEMPORARY': 't',
+}
+
 _CONFDELTYPES = {
     'RESTRICT': 'r',
     'NO ACTION': 'a',
@@ -33,12 +40,11 @@ def table_exists(cr, tablename):
 
 def table_kind(cr, tablename):
     """ Return the kind of a table: ``'r'`` (regular table), ``'v'`` (view),
-        ``'f'`` (foreign table), ``'t'`` (temporary table),
-        ``'m'`` (materialized view), or ``None``.
+        ``'f'`` (foreign table), ``'t'`` (temporary table), or ``None``.
     """
-    query = "SELECT relkind FROM pg_class WHERE relname = %s"
+    query = "SELECT table_type FROM information_schema.tables WHERE table_name=%s"
     cr.execute(query, (tablename,))
-    return cr.fetchone()[0] if cr.rowcount else None
+    return _TABLE_KIND[cr.fetchone()[0]] if cr.rowcount else None
 
 def create_model_table(cr, tablename, comment=None):
     """ Create the table for a model. """

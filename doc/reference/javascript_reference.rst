@@ -446,7 +446,7 @@ of them in the new class.
         },
     };
 
-    var Hamster = Animal.extend(DanceMixin, {
+    var Hamster = Hamster.extend(DanceMixin, {
         sleep: function () {
             console.log('sleeping');
         },
@@ -1348,7 +1348,7 @@ order.
 
     .. code-block:: xml
 
-        <field name="datetimefield" options='{"datepicker": {"daysOfWeekDisabled": [0, 6]}}'/>
+        <field name="datefield" options='{"datepicker": {"daysOfWeekDisabled": [0, 6]}}'/>
 
 - monetary (FieldMonetary)
     This is the default field type for fields of type 'monetary'. It is used to
@@ -1666,7 +1666,7 @@ Relational fields
 
 .. autoclass:: web.relational_fields.FieldSelection
 
-    Supported field types: *selection*
+    Supported field types: *selection*, *many2one*
 
     .. attribute:: placeholder
 
@@ -1697,7 +1697,7 @@ Relational fields
 - many2one (FieldMany2One)
     Default widget for many2one fields.
 
-    - Supported field types: *many2one*
+    - Supported field types: *selection, many2one*
 
     Attributes:
 

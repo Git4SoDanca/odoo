@@ -42,9 +42,7 @@ class IrRule(models.Model):
     def _eval_context(self):
         """Returns a dictionary to use as evaluation context for
            ir.rule domains."""
-        # use an empty context for 'user' to make the domain evaluation
-        # independent from the context
-        return {'user': self.env.user.with_context({}), 'time': time}
+        return {'user': self.env.user, 'time': time}
 
     @api.depends('groups')
     def _compute_global(self):
@@ -98,8 +96,6 @@ class IrRule(models.Model):
                 group_domains.append(dom)
 
         # combine global domains and group domains
-        if not group_domains:
-            return expression.AND(global_domains)
         return expression.AND(global_domains + [expression.OR(group_domains)])
 
     @api.model

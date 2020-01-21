@@ -3,7 +3,7 @@
     'name': 'test-eval',
     'version': '0.1',
     'category': 'Tests',
-    'description': """Deprecated empty module in favor of test-lint.""",
+    'description': """A module to test Odoo with pylint.""",
     'maintainer': 'Odoo SA',
     'depends': ['base'],
     'installable': True,

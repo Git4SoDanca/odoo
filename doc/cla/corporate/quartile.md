@@ -12,4 +12,3 @@ List of contributors:
 
 Yoshi Tashiro tashiro@quartile.co https://github.com/yostashiro
 Tim Lai tl@quartile.co https://github.com/TimLai125
-Tomoko Matsumura nako@quartile.co https://github.com/nakometal

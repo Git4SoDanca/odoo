@@ -134,14 +134,6 @@ class TestExpression(TransactionCase):
         cats = Category.search([('id', 'child_of', categ_1.ids)])
         self.assertEqual(len(cats), 1)
 
-        # test hierarchical search in m2m with child ids (nonsense name)
-        cats = Category.search([('id', 'child_of', 'nonsense name')])
-        self.assertEqual(len(cats), 0)
-
-        # test hierarchical search in m2m with child ids (empty list)
-        cats = Category.search([('id', 'child_of', [])])
-        self.assertEqual(len(cats), 0)
-
         # test hierarchical search in m2m with parent id (list of ids)
         cats = Category.search([('id', 'parent_of', categ_1.ids)])
         self.assertEqual(len(cats), 3)
@@ -161,14 +153,6 @@ class TestExpression(TransactionCase):
         # test hierarchical search in m2m with parent ids
         cats = Category.search([('id', 'parent_of', categ_root.ids)])
         self.assertEqual(len(cats), 1)
-
-        # test hierarchical search in m2m with child ids (nonsense name)
-        cats = Category.search([('id', 'parent_of', 'nonsense name')])
-        self.assertEqual(len(cats), 0)
-
-        # test hierarchical search in m2m with child ids (empty list)
-        cats = Category.search([('id', 'parent_of', [])])
-        self.assertEqual(len(cats), 0)
 
     def test_10_equivalent_id(self):
         # equivalent queries
@@ -626,36 +610,6 @@ class TestExpression(TransactionCase):
 
         not_be = Partner.with_context(lang='fr_FR').search([('country_id', '!=', 'Belgique')])
         self.assertNotIn(agrolait, not_be)
-
-    def test_proper_combine_unit_leaves(self):
-        # test that unit leaves (TRUE_LEAF, FALSE_LEAF) are properly handled in specific cases
-        false = expression.FALSE_DOMAIN
-        true = expression.TRUE_DOMAIN
-        normal = [('foo', '=', 'bar')]
-        # OR with single FALSE_LEAF
-        expr = expression.OR([false])
-        self.assertEqual(expr, false)
-        # OR with multiple FALSE_LEAF
-        expr = expression.OR([false, false])
-        self.assertEqual(expr, false)
-        # OR with FALSE_LEAF and a normal leaf
-        expr = expression.OR([false, normal])
-        self.assertEqual(expr, normal)
-        # OR with AND of single TRUE_LEAF and normal leaf
-        expr = expression.OR([expression.AND([true]), normal])
-        self.assertEqual(expr, true)
-        # AND with single TRUE_LEAF
-        expr = expression.AND([true])
-        self.assertEqual(expr, true)
-        # AND with multiple TRUE_LEAF
-        expr = expression.AND([true, true])
-        self.assertEqual(expr, true)
-        # AND with TRUE_LEAF and normal leaves
-        expr = expression.AND([true, normal])
-        self.assertEqual(expr, normal)
-        # AND with OR with single FALSE_LEAF and normal leaf
-        expr = expression.AND([expression.OR([false]), normal])
-        self.assertEqual(expr, false)
 
 
 class TestAutoJoin(TransactionCase):
